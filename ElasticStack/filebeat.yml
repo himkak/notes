@@ -1,0 +1,16 @@
+filebeat.inputs:
+- type: log
+  enabled: true
+  paths:
+   - C:\Users\hmnsh\Documents\eclipse workspaces\workspace1_poc\SpringMysql\logs\*.log
+  document_type: myapp_logs
+  
+tags: ["him-hyd-01"]
+
+   
+#setup.kibana:
+#  host: "localhost:5601"
+#  space.id: him-logstash
+
+output.logstash:
+  hosts: ["127.0.0.1:5044"]
