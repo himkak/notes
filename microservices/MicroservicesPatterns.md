@@ -29,22 +29,22 @@ https://www.youtube.com/watch?v=S4FnmSeRpAY
 - It uses Events
 - Choreography - each local transaction publishes domain events that trigger local transactions in other services
 
-![Choreography](https://github.com/himkak/my-notes/blob/master/microservices/Saga_Choreography.PNG)
+![Choreography](https://github.com/himkak/notes/blob/master/microservices/Saga_Choreography.PNG)
 
 ### Orchestration
 - Orchestration - an orchestrator (object) tells the participants what local transactions to execute
 
-![Orchestration](https://github.com/himkak/my-notes/blob/master/microservices/Saga_Orchestration.PNG)
+![Orchestration](https://github.com/himkak/notes/blob/master/microservices/Saga_Orchestration.PNG)
 
 #### Implicit orchestrator
 
-![Implicit vs Explicit](https://github.com/himkak/my-notes/blob/master/microservices/Saga_ImplicitVsExplicit.JPG)
+![Implicit vs Explicit](https://github.com/himkak/notes/blob/master/microservices/Saga_ImplicitVsExplicit.JPG)
 
-![Implicit](https://github.com/himkak/my-notes/blob/master/microservices/Saga_Orchestrator_Implicit.JPG)
+![Implicit](https://github.com/himkak/notes/blob/master/microservices/Saga_Orchestrator_Implicit.JPG)
 
 #### Explicit Orchestrator
 **Preferred over implicit**
-![Explicit](https://github.com/himkak/my-notes/blob/master/microservices/Saga_Orchestrator_Explicit.JPG)
+![Explicit](https://github.com/himkak/notes/blob/master/microservices/Saga_Orchestrator_Explicit.JPG)
 
 ### 2 phase commit
 - used by traditional monolith applications
@@ -79,7 +79,7 @@ https://www.youtube.com/watch?v=S4FnmSeRpAY
 
 - Event store : Databse optimized for storing events
 
-![Advantages of event sourcing](https://github.com/himkak/my-notes/blob/master/microservices/EventSource_Advantages.JPG)
+![Advantages of event sourcing](https://github.com/himkak/notes/blob/master/microservices/EventSource_Advantages.JPG)
 
 EventSource_Drawbacks.JPG
 
@@ -107,5 +107,5 @@ EventSource_Drawbacks1.JPG
 
 # Monolith to microservices
 
-- https://github.com/himkak/my-notes/blob/master/microservices/MonolithToMicroservices.md
+- https://github.com/himkak/notes/blob/master/microservices/MonolithToMicroservices.md
 

@@ -151,7 +151,7 @@ In computer networks, a reverse proxy is a type of proxy server that retrieves r
 - It acts as the single entryway into a system allowing multiple APIs or microservices to act cohesively and provide a uniform experience to the user. 
 - The most important role the API gateway plays is ensuring reliable processing of every API call.
 
-![API GW](https://github.com/himkak/my-notes/blob/master/SystemDesign/ApiGw.png)
+![API GW](https://github.com/himkak/notes/blob/master/SystemDesign/ApiGw.png)
 
 **Problems it solves**
 - How to support different clients
@@ -259,7 +259,7 @@ A type of hashing that minimizes the number of keys that need to be remapped whe
 
 #### Redis
 
-- https://github.com/himkak/my-notes/tree/master/Redis 
+- https://github.com/himkak/notes/tree/master/Redis 
 
 #### Cache Eviction Policy
 
@@ -280,7 +280,7 @@ The backing data structure is : HashMap for get, put and delete in O(1), backed 
 
 
 #### Cassandra
-- https://github.com/himkak/my-notes/blob/master/DB/cassandra/Cassandra.md
+- https://github.com/himkak/notes/blob/master/DB/cassandra/Cassandra.md
 
 - https://docs.datastax.com/en/archived/cassandra/3.0/cassandra/architecture/archTOC.html
 
@@ -327,7 +327,7 @@ The backing data structure is : HashMap for get, put and delete in O(1), backed 
 	- If I have huge amount of data and want to scale in future, then go for NoSql
 	- If My Data is not very much organized, then Go for NoSql.
 	
-![Which DB to prefer](https://github.com/himkak/my-notes/blob/master/SystemDesign/WhichDbToPrefer.png)
+![Which DB to prefer](https://github.com/himkak/notes/blob/master/SystemDesign/WhichDbToPrefer.png)
 
 - https://www.youtube.com/watch?v=KWOSGVtHWqA : AWS re:Invent 2017: [REPEAT] Which Database to Use When? (DAT310-R)
 
@@ -339,21 +339,21 @@ The backing data structure is : HashMap for get, put and delete in O(1), backed 
 
 - shape
 
-![Data shape](https://github.com/himkak/my-notes/blob/master/SystemDesign/DB_Consideration_Shape.PNG)
+![Data shape](https://github.com/himkak/notes/blob/master/SystemDesign/DB_Consideration_Shape.PNG)
 
 - size
 
-![Data size](https://github.com/himkak/my-notes/blob/master/SystemDesign/DB_Consideration_Size.PNG)
+![Data size](https://github.com/himkak/notes/blob/master/SystemDesign/DB_Consideration_Size.PNG)
 
 - computational requirements for the data
 
-![Data compute](https://github.com/himkak/my-notes/blob/master/SystemDesign/DB_Consideration_Compute.PNG)
+![Data compute](https://github.com/himkak/notes/blob/master/SystemDesign/DB_Consideration_Compute.PNG)
 
 - 
-![DB types with behaviour](https://github.com/himkak/my-notes/blob/master/SystemDesign/DbTypesWithBehaviour.PNG)
+![DB types with behaviour](https://github.com/himkak/notes/blob/master/SystemDesign/DbTypesWithBehaviour.PNG)
 
 - 
-![Relational DBs behaviour](https://github.com/himkak/my-notes/blob/master/SystemDesign/RelationalDbsBehaviour.PNG)
+![Relational DBs behaviour](https://github.com/himkak/notes/blob/master/SystemDesign/RelationalDbsBehaviour.PNG)
 
 ### Database Lock
 
@@ -496,7 +496,7 @@ The act of fetching a resource or piece of data regularly at an interval to make
 
 ### Kafka
 
-- https://github.com/himkak/my-notes/tree/master/Kafka 
+- https://github.com/himkak/notes/tree/master/Kafka 
 
 
 ### HTTP Security Authentication Authorization
@@ -565,7 +565,7 @@ Level 1 - Resources
 Level 2 - HTTP Verbs   
 Level 3 - Hypermedia Controls  
 
-![Rchardson Maturity Model](https://github.com/himkak/my-notes/blob/master/SystemDesign/Http_RichardsonMaturityModel.png)
+![Rchardson Maturity Model](https://github.com/himkak/notes/blob/master/SystemDesign/Http_RichardsonMaturityModel.png)
 
 https://martinfowler.com/articles/richardsonMaturityModel.html
 
@@ -692,7 +692,7 @@ https://martinfowler.com/articles/richardsonMaturityModel.html
 
 ### design a short URL system 
 
-- https://github.com/himkak/my-notes/blob/master/SystemDesign/tinyUrl.md
+- https://github.com/himkak/notes/blob/master/SystemDesign/tinyUrl.md
 
 ### Designing Typeahead Suggestion
 
@@ -702,7 +702,7 @@ https://martinfowler.com/articles/richardsonMaturityModel.html
 
 ### Chat Applications 
 
-- https://github.com/himkak/my-notes/blob/master/SystemDesign/WhatsApp.md
+- https://github.com/himkak/notes/blob/master/SystemDesign/WhatsApp.md
 
 ### Notification
 - GCM (Google Cloud Messaging) server is used to send notification to apps
@@ -712,7 +712,7 @@ https://martinfowler.com/articles/richardsonMaturityModel.html
 
 #### Netflix
 
-- https://github.com/himkak/my-notes/blob/master/SystemDesign/netflix.md
+- https://github.com/himkak/notes/blob/master/SystemDesign/netflix.md
 
 #### youtube
 

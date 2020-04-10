@@ -10,9 +10,9 @@
 
 ### System Design
 #### Approach 1
-![Approach 1 - system design](https://github.com/himkak/my-notes/blob/master/SystemDesign/Netflix_Approach1_SystemDesign.PNG)
+![Approach 1 - system design](https://github.com/himkak/notes/blob/master/SystemDesign/Netflix_Approach1_SystemDesign.PNG)
 
-![Approach 1 - Flow Diagram](https://github.com/himkak/my-notes/blob/master/SystemDesign/Netflix_Approach1_FlowDiagram.PNG)
+![Approach 1 - Flow Diagram](https://github.com/himkak/notes/blob/master/SystemDesign/Netflix_Approach1_FlowDiagram.PNG)
 
 
 **Flie Storage Server**
@@ -27,7 +27,7 @@
 
 - https://www.youtube.com/watch?v=psQzyFfsUGU
 
-![Approach 2 - System Design](https://github.com/himkak/my-notes/blob/master/SystemDesign/NetflixSystemDesign.JPG)
+![Approach 2 - System Design](https://github.com/himkak/notes/blob/master/SystemDesign/NetflixSystemDesign.JPG)
 
 
 # References 

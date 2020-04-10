@@ -43,7 +43,7 @@
 	
 #### Distributed
 
-![Rate limiter system design sticky session](https://github.com/himkak/my-notes/blob/master/SystemDesign/rateLimiter_Distributed_SickySession.JPG)
+![Rate limiter system design sticky session](https://github.com/himkak/notes/blob/master/SystemDesign/rateLimiter_Distributed_SickySession.JPG)
 
 - Approaach 1 : sticky session
 	- Issue is single point of failure

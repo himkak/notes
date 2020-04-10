@@ -240,7 +240,7 @@ It supports JSR-107
 3)The caching Object class should implement serializable
 4)Use @cacheable annotation, which states, cache the result of this method.
 
-![Spring cache abstraction annotation](https://github.com/himkak/my-notes/blob/master/Cache/SpringCacheAbstractionAnnotations.PNG)
+![Spring cache abstraction annotation](https://github.com/himkak/notes/blob/master/Cache/SpringCacheAbstractionAnnotations.PNG)
 
 accountId1
 ### @cacheable 
@@ -273,7 +273,7 @@ TODO set the TTL
 
 ## 3. JCache
 
-![Spring cache abstraction annotation vs JCache annotations](https://github.com/himkak/my-notes/blob/master/Cache/SpringVsJCacheAnnotations.PNG)
+![Spring cache abstraction annotation vs JCache annotations](https://github.com/himkak/notes/blob/master/Cache/SpringVsJCacheAnnotations.PNG)
 
 # Caches Comparison
 

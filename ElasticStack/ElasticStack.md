@@ -11,11 +11,11 @@ ELK :  Built on an open source foundation, the Elastic Stack lets you reliably a
 
 -   B: Beats: Beats is the platform for single-purpose data shippers. They send data from hundreds or thousands of machines and systems to Logstash or Elasticsearch. Small, lightweight utilities for reading logs from a variety of sources. Usually sends data to logstash. Filebeat(text log files), metricbeat(os and applications), packetbeat(network monitoring), winlobeat(windows event log), libbeat(write your own loag beat)
 
-![Elastic Stack](https://github.com/himkak/my-notes/blob/master/ElasticStack/ElasticStack.PNG)
+![Elastic Stack](https://github.com/himkak/notes/blob/master/ElasticStack/ElasticStack.PNG)
 
 
 ### How log flows in this stack
-![ELK](https://github.com/himkak/my-notes/blob/master/ElasticStack/ELK.png)
+![ELK](https://github.com/himkak/notes/blob/master/ElasticStack/ELK.png)
 
 -------------------------------------------------------
 -------------------------------------------------------
@@ -35,7 +35,7 @@ Run the container: `docker run -p 9200:9200 -p 9300:9300 -e "discovery.type=sing
 
 Elastic search by default runs on 9200 port.  
 Elastic search configuration file is config/elasticsearch.yml
-![Sample Elastic Search Queries](https://github.com/himkak/my-notes/blob/master/ElasticStack/ElasticSearch_SampleQueries.md)
+![Sample Elastic Search Queries](https://github.com/himkak/notes/blob/master/ElasticStack/ElasticSearch_SampleQueries.md)
 
 #### Alerting with watchers
 
@@ -43,10 +43,10 @@ Watcher is part of xpack plugin.
 Install xpack plugin in elasticsearch : `elasticsearch-plugin install x-pack`  
 TO send email configure elasticsearch.yml with
 
-![Watcher Overview](https://github.com/himkak/my-notes/blob/master/ElasticStack/ElasticSearch_Watcher.PNG)
+![Watcher Overview](https://github.com/himkak/notes/blob/master/ElasticStack/ElasticSearch_Watcher.PNG)
 
 
-![Watcher workflow](https://github.com/himkak/my-notes/blob/master/ElasticStack/WatcherWorkflow.PNG)
+![Watcher workflow](https://github.com/himkak/notes/blob/master/ElasticStack/WatcherWorkflow.PNG)
 
 
 
@@ -86,14 +86,14 @@ TO view the visualization charts, you can create a dashboard and add the visuali
 
 ### LogStash
 
-![Logstash Input](https://github.com/himkak/my-notes/blob/master/ElasticStack/LogstashIntro.PNG)
+![Logstash Input](https://github.com/himkak/notes/blob/master/ElasticStack/LogstashIntro.PNG)
 
 
 #### Configuration
 
 logstash.conf : It contains the pipeline stages (input, filter, output)
 
-![Logstash Input](https://github.com/himkak/my-notes/blob/master/ElasticStack/LogstashConfig.PNG)
+![Logstash Input](https://github.com/himkak/notes/blob/master/ElasticStack/LogstashConfig.PNG)
 
 #### Execution
 To test if logs are being pushed from logstash to elasticsearch. Execute this below command and write in the cmd:    

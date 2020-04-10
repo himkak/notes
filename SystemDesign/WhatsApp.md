@@ -55,7 +55,7 @@
 ```
 - When the user closes the app, the client stops sending the heart beat. As the connection server, doesnt gets the heart-beat, so it doesnt updates the last seen.
 
-![Approach 1](https://github.com/himkak/my-notes/blob/master/SystemDesign/whatsApp_Approach1.jpg)
+![Approach 1](https://github.com/himkak/notes/blob/master/SystemDesign/whatsApp_Approach1.jpg)
 
 
 #### Business Flow
@@ -102,7 +102,7 @@ message
 - last seen : 
 - Group service : manages the group related information
 
-![Approach 1](https://github.com/himkak/my-notes/blob/master/SystemDesign/whatsApp_Approach2.jpg)
+![Approach 1](https://github.com/himkak/notes/blob/master/SystemDesign/whatsApp_Approach2.jpg)
 
 - In this aproach, we extnd the previous approach.
 - The connection service just manages the connections.

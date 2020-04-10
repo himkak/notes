@@ -11,15 +11,15 @@
 
 All this is managed by 2 modules: control plane and sidecar
 
-![IMAGE](https://github.com/himkak/my-notes/blob/master/microservices/ServiceMesh_TrafficControl.PNG)
+![IMAGE](https://github.com/himkak/notes/blob/master/microservices/ServiceMesh_TrafficControl.PNG)
 
 Sidecar framework is Envoy and control-plane framework is Istio
 
-![IMAGE](https://github.com/himkak/my-notes/blob/master/microservices/ServiceMesh.PNG)
+![IMAGE](https://github.com/himkak/notes/blob/master/microservices/ServiceMesh.PNG)
 
 ## Service Mesh Vs Api Gw Capabilities
 
-![IMAGE](https://github.com/himkak/my-notes/blob/master/microservices/ServiceMesh_Vs_ApiGw_Capabilities.PNG)
+![IMAGE](https://github.com/himkak/notes/blob/master/microservices/ServiceMesh_Vs_ApiGw_Capabilities.PNG)
 
 # References
 https://www.youtube.com/watch?v=QiXK0B9FhO0 

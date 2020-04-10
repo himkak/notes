@@ -46,13 +46,13 @@ Any client connects to any broker in the cluster & gets details of all other bro
 ### Offset
 - The only metadata retained on a per-consumer basis is the **offset** or position of that consumer in the log. This offset is controlled by the consumer: normally a consumer will advance its offset linearly as it reads records, but, in fact, since the position is controlled by the consumer it can consume records in any order it likes.
 
-![IMAGE](https://github.com/himkak/my-notes/blob/master/Kafka/Consumer_Offset.PNG)
+![IMAGE](https://github.com/himkak/notes/blob/master/Kafka/Consumer_Offset.PNG)
 ### consumer group
 -Consumers label themselves with a consumer **group** name, and each record published to a topic is delivered to one consumer instance within each subscribing consumer group. 
 If all the consumer instances have the same consumer group, then the records will effectively be load balanced over the consumer instances. 
 If all the consumer instances have different consumer groups, then each record will be broadcast to all the consumer processes.
 
-![IMAGE](https://github.com/himkak/my-notes/blob/master/Kafka/ConsumerGroup.PNG)
+![IMAGE](https://github.com/himkak/notes/blob/master/Kafka/ConsumerGroup.PNG)
 
 ### Message Key
 - A message has an optional parameter **Message Key**, if this is provided with the message, its guaranteed that message will be reaching same partition, if partition not mentioned.
@@ -90,7 +90,7 @@ To start a consumer for a group add `--group <groupName>`
 7) To get information about a topic
 `kafka-topics.bat --describe --topic my_topic1 --zookeeper localhost:2181`
 Result:
-![IMAGE](https://github.com/himkak/my-notes/blob/master/Kafka/TopicDescribe_0Partition_0Replica.PNG)
+![IMAGE](https://github.com/himkak/notes/blob/master/Kafka/TopicDescribe_0Partition_0Replica.PNG)
 
 
 ## To see fault tolerant
@@ -108,23 +108,23 @@ Now we create a topic with replication factor 3
 
 Now if we execute the describe command: 
 
-![IMAGE](https://github.com/himkak/my-notes/blob/master/Kafka/TopicDescribe_0Partition_3Replica_AllBrokersUp.PNG)
+![IMAGE](https://github.com/himkak/notes/blob/master/Kafka/TopicDescribe_0Partition_3Replica_AllBrokersUp.PNG)
 
 Now we kill the leader that is broker 2, after this the describe command result:
 
-![IMAGE](https://github.com/himkak/my-notes/blob/master/Kafka/TopicDescribe_0Partition_3Replica.PNG)
+![IMAGE](https://github.com/himkak/notes/blob/master/Kafka/TopicDescribe_0Partition_3Replica.PNG)
 
 So now the leader changed and the isr (in sync replicas) reduced 
 
 - Producer logs:
 
-![IMAGE](https://github.com/himkak/my-notes/blob/master/Kafka/ProducerWhenLeaderBrokerKilled.PNG)
+![IMAGE](https://github.com/himkak/notes/blob/master/Kafka/ProducerWhenLeaderBrokerKilled.PNG)
 
 It got disconnected with leader broker 2 and got connected with the new leader broker.
 
 Same happens with consumer:
 
-![IMAGE](https://github.com/himkak/my-notes/blob/master/Kafka/ConsumerWhenLeaderBrokerKilled.PNG)
+![IMAGE](https://github.com/himkak/notes/blob/master/Kafka/ConsumerWhenLeaderBrokerKilled.PNG)
 
 but it didnt loose any msg from producer.
 
@@ -140,7 +140,7 @@ As Kafka is based on topics. Topic has partitions. Every partititon runs on a se
 When we send message on topic, suppose with 3 partitions, the load on the topic is distributed over 3 partitions. 
 
 
-![IMAGE](https://github.com/himkak/my-notes/blob/master/Kafka/TopicDistributedIntoPartitions.PNG)
+![IMAGE](https://github.com/himkak/notes/blob/master/Kafka/TopicDistributedIntoPartitions.PNG)
 
 A producer sends message to a topic. The load is distributed over multiple partitions. The distribution happens depending on the scheme selected. One of the scheme is round robin.
 Consumer/s subscribes to the topic and gets the messages from different partitions.
@@ -149,20 +149,20 @@ When we create a topic with multiple partitions, zookeeper checks the cluster av
 If that broker goes down, zookeeper helps in electing the next leader for that partition. Along with zookeeper, every broker has the metadata of the partitions managed by the brokers.
 Brokers keep on sharing their status with the zookeeper.
 
-![IMAGE](https://github.com/himkak/my-notes/blob/master/Kafka/TopicCreationManagedByZookeeper.PNG)
+![IMAGE](https://github.com/himkak/notes/blob/master/Kafka/TopicCreationManagedByZookeeper.PNG)
 
 When a producer wants to connect to a topic, it should have knowledge of atleast one broker. on connecting to a broker, producer gets the metadata of the partitions managed by the brokers. After that producer starts sending the message to the respective broker of the partition.
 Same goes with consumer.
 
 ## How is Kafka fault tolerant : Replication
 
-![IMAGE](https://github.com/himkak/my-notes/blob/master/Kafka/BrokerWithReplicas.PNG)
+![IMAGE](https://github.com/himkak/notes/blob/master/Kafka/BrokerWithReplicas.PNG)
 
 Every broker has replica sets which provides fault tolerant.
 
 ## How Kafka indentifies the partition of the topic
 
-![IMAGE](https://github.com/himkak/my-notes/blob/master/Kafka/ProducerIdentifyingPartitionStrategy.PNG)
+![IMAGE](https://github.com/himkak/notes/blob/master/Kafka/ProducerIdentifyingPartitionStrategy.PNG)
 
 
 ## Sample Java code of kafka producer consumer
@@ -193,7 +193,7 @@ Every thing evolves around events and not data.
 
 # Kafka Connect
 Processing data events one by one.
-![IMAGE](https://github.com/himkak/my-notes/blob/master/Kafka/KafkaConnect_UseCases.PNG)
+![IMAGE](https://github.com/himkak/notes/blob/master/Kafka/KafkaConnect_UseCases.PNG)
 
 Kafka connect are already written code (producer/consumer), which can be used to transfer data.
 
@@ -215,7 +215,7 @@ Sample: https://github.com/himkak/SampleKafkaTwitterConnect
 Used to consume and process the data.
 TO transform the data.
 
-![IMAGE](https://github.com/himkak/my-notes/blob/master/Kafka/kafkaStream.PNG)
+![IMAGE](https://github.com/himkak/notes/blob/master/Kafka/kafkaStream.PNG)
 
 ## usage
 Create a java maven project
@@ -230,9 +230,9 @@ https://github.com/himkak/KafkaStreamsFilterTweets
 Used to validate the messages produced by producer or consumed by consumer against a contract, which is published in schema registry.
 The supported format is Apache Avro.
 
-![IMAGE](https://github.com/himkak/my-notes/blob/master/Kafka/SchemaRegistryNeed.PNG)
+![IMAGE](https://github.com/himkak/notes/blob/master/Kafka/SchemaRegistryNeed.PNG)
 
-![IMAGE](https://github.com/himkak/my-notes/blob/master/Kafka/KafkaWithSchemaRegistry.PNG)
+![IMAGE](https://github.com/himkak/notes/blob/master/Kafka/KafkaWithSchemaRegistry.PNG)
 
 # AVRO
 Avro is a row-oriented remote procedure call and data serialization framework developed within Apache's Hadoop project. It uses JSON for defining data types and protocols, and serializes data in a compact binary format.
