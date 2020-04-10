@@ -130,8 +130,8 @@ https://github.com/himkak/AvroRpcSampleClient
 
 
 # References
-[Getting Started AVRO]https://avro.apache.org/docs/1.8.2/gettingstartedjava.html
-[AVRO RPC]https://github.com/phunt/avro-rpc-quickstart
-https://iwayinfocenter.informationbuilders.com/TLs/TL_soa_ism_component/source/avro_components51.htm
+- [Getting Started AVRO]https://avro.apache.org/docs/1.8.2/gettingstartedjava.html
+- [AVRO RPC]https://github.com/phunt/avro-rpc-quickstart
+- https://iwayinfocenter.informationbuilders.com/TLs/TL_soa_ism_component/source/avro_components51.htm
 
-[NioClientSocketChannelFactory ChannelFactory] https://github.com/rxnzero/apache-avro-example/blob/master/src/main/java/example/avro/rpc/CalculatorDynamicClient.java
+- [NioClientSocketChannelFactory ChannelFactory] https://github.com/rxnzero/apache-avro-example/blob/master/src/main/java/example/avro/rpc/CalculatorDynamicClient.java
