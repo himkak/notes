@@ -59,3 +59,62 @@
 ## Node
 Every instance of cassandra is called a node.
 - To check the status of a node `nodetool info`
+
+## Basic CQL Concepts
+
+### keyspace
+- equivalent to schema
+
+- TO create a keyspave
+```
+create keyspace killrvideo with replication = {'class':'SimpleStrategy', 'replicationFactor':1};
+```
+
+- to use a keyspace
+```
+use killrvideo;
+```
+
+### Create table
+
+```
+create table table1 (column1 text, column2, text, column3 int, PRIMARY KEY (column1));
+```
+
+### Basic data types 
+
+- Text
+
+- Int
+
+- uuid : generated via uuid()
+
+- timeuuid : genetrated via now()
+
+- timestamp
+
+- copy command : To import data from csv
+
+```
+copy table1 (col1, col2, col3) from 'table1Data.csv'
+with header= true;
+```
+
+- select :
+```
+select * from table1;
+select col1, col2 from table1;
+select count(*) from table1;
+select * from table1 limit 10;
+```
+
+- truncate : to remove all data from table
+
+- alter table 
+
+- source : to execute cql file
+
+
+# References
+
+- https://academy.datastax.com/

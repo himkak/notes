@@ -84,7 +84,7 @@ message
 #### DB Structure
 
 ##### Relational
-- conversion table: conversation id, encryptedMessage, time
+- conversation table: conversation id, encryptedMessage, time
 - user conversation table : userId, conversiation Id, encryption key
 - unread table : 
 
@@ -151,6 +151,11 @@ message
 
 - https://medium.com/hackernoon/how-to-build-your-own-real-time-chat-app-like-whatsapp-9d1d058afd5b : How to Build your Own Real-time Chat App like WhatsApp?
 - contus fly is a company that provides the solution to build chat apps
+
+- http://highscalability.com/blog/2014/2/26/the-whatsapp-architecture-facebook-bought-for-19-billion.html : The WhatsApp Architecture Facebook Bought For $19 Billion
+
+- https://www.youtube.com/watch?v=c12cYAUTXXs : Erlang Factory 2014 - That's 'Billion' with a 'B': Scaling to the Next Level at WhatsApp
+
 
 
 

@@ -20,6 +20,13 @@ Investing in scaling before it is needed is generally not a smart business propo
 
 - https://lethain.com/introduction-to-architecting-systems-for-scale/
 
+- https://github.com/donnemartin/system-design-primer#system-design-topics-start-here : system design prep github page, by a FB SE (*****)
+
+- https://tianpan.co/notes/2016-02-13-crack-the-system-design-interview : Crack the System Design Interview
+
+
+
+
 ### Key Characteristics of Distributed Systems
 
 - https://www.youtube.com/watch?v=Y6Ev8GIlbxc : Distributed Systems in One Lesson by Tim Berglund
@@ -35,6 +42,9 @@ Investing in scaling before it is needed is generally not a smart business propo
 - https://www.lecloud.net/search/scalability
 
 - http://highscalability.com/blog/2012/9/19/the-4-building-blocks-of-architecting-systems-for-scale.html
+
+- https://www.youtube.com/watch?v=-W9F__D3oY4 : CS75 (Summer 2012) Lecture 9 Scalability Harvard Web Development David Malan
+
 
 
 </details>
@@ -103,6 +113,10 @@ A type of reverse proxy that distributes traffic across servers. Load balancers 
 - Least connections
 - Weighted Least connections
 - Random
+
+#### L3
+
+- To distribute between different data centres.
 
 #### L4
 - https://www.nginx.com/resources/glossary/layer-4-load-balancing/
@@ -200,6 +214,9 @@ https://www.crucial.com/articles/about-ssd/ssd-vs-hdd#
 
 ## Relational DB
 
+### Federation
+
+Federation (or functional partitioning) splits up databases by function. For example, instead of a single, monolithic database, you could have three databases: forums, users, and products, resulting in less read and write traffic to each database and therefore less replication lag. Smaller databases result in more data that can fit in memory, which in turn results in more cache hits due to improved cache locality. With no single central master serializing writes you can write in parallel, increasing throughput.
 
 ### Indexes
 
@@ -360,6 +377,9 @@ The backing data structure is : HashMap for get, put and delete in O(1), backed 
 ### Searching
 
 - https://www.youtube.com/watch?v=KyCYyoGusqs
+
+#### Inverted / reverese index
+- https://www.geeksforgeeks.org/inverted-index/
 
 #### Elastic Search
 

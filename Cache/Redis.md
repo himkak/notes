@@ -275,23 +275,6 @@ TODO set the TTL
 
 ![Spring cache abstraction annotation vs JCache annotations](https://github.com/himkak/notes/blob/master/Cache/SpringVsJCacheAnnotations.PNG)
 
-# Caches Comparison
-
-## Security, encryption
-
-## Scalability
-
-
-## Required use cases:
-
-- Save a list of students of a school with elements already sorted
-- Set expiry time for the list
-- refresh the expiry time of list on every fetch
-- fetch elements of students of a specific school on index from 0 to 20
-- fetch elements from 20 to 40...
-- Delete the list of a specific school
-
-
 
 # References
 - redis crash course : https://www.youtube.com/watch?v=Hbt56gFj998
