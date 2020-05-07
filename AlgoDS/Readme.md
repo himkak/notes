@@ -1,5 +1,53 @@
 
+- https://byte-by-byte.wistia.com/medias/cwwyk06xhk?wvideo=cwwyk06xhk : recursion
+- https://www.youtube.com/playlist?list=PLDV1Zeh2NRsB6SWUrDFW2RmDotAfPbeHu : Data structures playlist by Google employee
+- https://www.youtube.com/playlist?list=PLDV1Zeh2NRsDGO4--qE8yH72HFL1Km93P : Graph playlist by Google employee
+- file:///C:/Users/hmnsh/OneDrive/Desktop/CI_DSA_study_guide.pdf : refs to good tutorials
+
 # Common Patterns
+
+<details>
+<summary> Mathematics
+</summary>
+
+## Mathematics
+
+- https://www.youtube.com/watch?v=DROZVHObeko : Permutation formula | Probability and combinatorics | Probability and Statistics | Khan Academy
+		- No of ways in which n objects can be placed in k spots : nPk = n!/(n-k)!
+		- n is the no of objects, k is the no of slots.
+
+- https://www.youtube.com/watch?v=p8vIcmr_Pqo : Combination formula | Probability and combinatorics | Probability and Statistics | Khan Academy
+		- In combination combinations with same lements is considered as single combination, eg : ABCD & DACB both are same in combination but diff in permutation
+		- No of combinations in which n objects can be placed in k spots : nCk = n!/(k! * (n-k)!)
+
+- https://www.youtube.com/watch?v=mJG1DManmLc : How to Swap Two Numbers using XOR Operator in Java.
+		- Swap a & b using xor : 
+		``` a=a^b
+			b=a^b
+			a=a^b
+		``` 
+- https://www.geeksforgeeks.org/find-element-appears-array-every-element-appears-twice/?ref=rp : Find the element that appears once in an array where every other element appears twice
+		- xor of a number with itself is 0
+		- Do a xor of all the numbers in array and u will get the result
+		
+- https://www.youtube.com/watch?v=HuZJqRDOPo0 : Find duplicates in O(n) time and O(1) extra space | GeeksforGeeks
+		- find A[abs(A[i])], if +ve mark as -ve, if -ve number is duplicate
+		
+
+- https://www.geeksforgeeks.org/c-program-find-gcd-hcf-two-numbers/
+
+- https://www.youtube.com/watch?v=dolcMgiJ7I0 : Finding all factors of a number
+
+- https://www.youtube.com/watch?v=6PDtgHhpCHo : Prime factorization of a number
+
+- https://www.interviewbit.com/tutorial/base-number-system/ : base number system
+
+- https://www.interviewbit.com/tutorial/binary-number-system/
+
+- 
+
+
+</details>
 
 <details>
 <summary> Complexity Analysis
@@ -52,26 +100,7 @@ It is about, how quickly runtime grows relative to the input, as the input gets 
 
 </details>
 
-<details>
-<summary> Mathematics
-</summary>
 
-## Mathematics
-
-- https://www.geeksforgeeks.org/c-program-find-gcd-hcf-two-numbers/
-
-- https://www.youtube.com/watch?v=dolcMgiJ7I0 : Finding all factors of a number
-
-- https://www.youtube.com/watch?v=6PDtgHhpCHo : Prime factorization of a number
-
-- https://www.interviewbit.com/tutorial/base-number-system/ : base number system
-
-- https://www.interviewbit.com/tutorial/binary-number-system/
-
-- 
-
-
-</details>
 
 
 
@@ -96,6 +125,7 @@ It is about, how quickly runtime grows relative to the input, as the input gets 
 - https://www.youtube.com/watch?v=KF2j-9iSf4Q : Merge Sort : HackerRank
 
 - https://www.youtube.com/watch?v=8hHWpuAPBHo : Quicksort Part 1 - Algorithm
+- https://www.youtube.com/watch?v=39BV3_DONJc : Quicksort Part 2 - Implementation
 
 - https://www.youtube.com/watch?v=-7pzsM6gxgY : QuickSort Algorithm - Divide and Conquer
 
@@ -434,9 +464,13 @@ That’s what backtracking is, re-tracing back the steps and discarding the choi
 
 ### Recursion theory
 
+https://leetcode.com/explore/learn/card/recursion-i/250/principle-of-recursion/1439/ 
+
 https://www.interviewbit.com/courses/programming/topics/backtracking/
 
-https://www.youtube.com/watch?v=_OmRGjbyzno  : Recursion basics - using factorial
+- https://www.youtube.com/watch?v=KEEKn7Me-ms : Algorithms: Recursion : hackerrank 
+
+- https://www.youtube.com/watch?v=_OmRGjbyzno  : Recursion basics - using factorial
 
 https://www.youtube.com/watch?v=ncpTxqK35PI  : Time and space complexity analysis of recursive programs - using factorial
 
@@ -451,7 +485,6 @@ https://www.youtube.com/watch?v=KYH83T4q6Vs  : Reverse a linked list using recur
 https://www.geeksforgeeks.org/modular-exponentiation-recursive/
 
 
-https://leetcode.com/explore/featured/card/recursion-i/250/principle-of-recursion/
 
 ### Backtracking theory
 
@@ -545,6 +578,8 @@ https://www.interviewbit.com/courses/programming/topics/linked-lists/
 - Remove Duplicates from a Linked List : https://www.geeksforgeeks.org/remove-duplicates-from-an-unsorted-linked-list/
 - Delete Node with a Given Key : https://www.geeksforgeeks.org/delete-occurrences-given-key-linked-list/
 - Insertion Sort of a Linked List : https://www.geeksforgeeks.org/insertion-sort-for-singly-linked-list/
+- https://www.youtube.com/watch?v=sZ4uGB2HgOg : Basics of Linked List | Top Interview Problems Solved in Java - Part 1
+
 
 
 - Nth from Last Node
@@ -612,6 +647,10 @@ https://www.youtube.com/watch?v=QZOLb0xHB_Q : Check for balanced parentheses usi
 	
 - https://www.youtube.com/watch?v=VNbkzsnllsU&list=PLq9MXGH7Fkt-jNNDHsuMIPFHsYBfD4LrZ&index=15&t=606s : Coding Interview Problem: Largest Rectangle in a Histogram
 
+- https://www.ideserve.co.in/learn/next-great-element-in-an-array : next biggest element in an array
+
+- https://www.interviewbit.com/problems/evaluate-expression/ : Reverse Polish Notation.
+
 ### Queue
 
 https://www.youtube.com/watch?v=XuCbpw6Bj1U : Data structures: Introduction to Queues [MANDATORY]
@@ -622,6 +661,10 @@ https://www.youtube.com/watch?v=A5_XdiK4J8A : Data structures: Linked List imple
 
 https://www.hackerearth.com/practice/data-structures/queues/basics-of-queues/tutorial/
 
+#### Interesting problems
+
+- https://leetcode.com/explore/learn/card/queue-stack/231/practical-application-queue/1371/ : uses queue and BFS
+
 </details>
 <details>
 <summary> Tree
@@ -629,11 +672,11 @@ https://www.hackerearth.com/practice/data-structures/queues/basics-of-queues/tut
 
 ## Tree
 
+- https://www.youtube.com/watch?v=qH6yxkw0u78 : Data structures: Introduction to Trees [Beginner]
+
 - https://www.youtube.com/watch?v=oSWTXtMglKE : Data Structures: Trees [Mandatory]
 
-- https://www.youtube.com/watch?v=qH6yxkw0u78 : Data structures: Introduction to Trees
-
-- https://www.youtube.com/watch?v=TQI_m32_AeU : Find the Maximum Depth or Height of a Tree | GeeksforGeeks
+- https://www.youtube.com/watch?v=TQI_m32_AeU : Find the Maximum Depth or Height of a Tree | GeeksforGeeks [Mandatory]
 
 
 
@@ -656,12 +699,21 @@ All levels will be completely filled
 
 #### Good problems
 
-- https://www.geeksforgeeks.org/construct-tree-from-given-inorder-and-preorder-traversal/
+- https://www.geeksforgeeks.org/construct-tree-from-given-inorder-and-preorder-traversal/ [Mandatory]
+- create binary tree from inorder and postorder traversal : https://www.youtube.com/watch?v=s5XRtcud35E [Mandatory]
+
 - https://www.geeksforgeeks.org/check-if-given-preorder-inorder-and-postorder-traversals-are-of-same-tree/
+
+- https://www.youtube.com/watch?v=G46cenlnXvI : Populate next right pointers in a binary tree
+
+- https://www.youtube.com/watch?v=13m9ZCB8gjw : Lowest Common Ancestor Binary Tree : solution is a pre-order traversal
+
 
 ### Binary Search Tree
 
 **A binary search tree is a binary tree where, for each node m,the left sub-tree only has nodes with keys smaller than (according to some total order) the key of m,while the right sub-tree only has nodes with keys larger than the key of m.**
+
+- https://leetcode.com/explore/learn/card/data-structure-tree/17/solve-problems-recursively/534/ 
 
 - https://www.geeksforgeeks.org/tree-traversals-inorder-preorder-and-postorder/
 
@@ -950,6 +1002,8 @@ The cost of the spanning tree is the sum of the weights of all the edges in the 
 - Coin Changing Problem  
 - Levenshtein Distance  
 
+- https://leetcode.com/discuss/general-discussion/491522/Dynamic-Programming-Questions-Thread?fbclid=IwAR1jQGU1Ox3_omZ_n7wdYfVM1Z7E3XyQDmTlJ0YNNcVLZrlHFBevvxM0g2o : lsit of famous DP questions
+
 - https://coursehunters.online/t/the-interview-cake-course-6-dynamic-programming-and-recursion/3183
 
 - Egg Drop :  https://www.youtube.com/watch?v=iOaRjDT0vjc
@@ -972,6 +1026,8 @@ The cost of the spanning tree is the sum of the weights of all the edges in the 
 
 ## Heap
 
+- https://www.youtube.com/playlist?list=PLSVu1-lON6Lwqj5nDqg8YyD7f4tjLMMBN
+
 - https://www.interviewbit.com/tutorial/heap-and-map-implementation-details/
 
 - https://www.interviewbit.com/tutorial/why-treemaps-heaps
@@ -982,13 +1038,15 @@ The cost of the spanning tree is the sum of the weights of all the edges in the 
 
 - https://www.youtube.com/watch?v=HqPJF2L5h9U&t=870s
 
-- https://towardsdatascience.com/binary-trees-the-heap-381efd4a4611
-
 - https://en.wikipedia.org/wiki/Heap_%28data_structure%29
 
 ![Heap In Array](https://github.com/himkak/notes/blob/master/AlgoDS/HeapInArray.PNG)
 
+### Good Problems
 
+- https://www.geeksforgeeks.org/merge-k-sorted-arrays/
+- https://www.interviewbit.com/problems/distinct-numbers-in-window/
+- https://www.geeksforgeeks.org/find-k-closest-numbers-in-an-unsorted-array/
 
 ## Two heaps
 In many problems, we are given a set of elements such that we can divide them into two parts. 
@@ -1137,6 +1195,8 @@ https://hackernoon.com/how-not-to-succeed-in-your-45-minute-coding-interview-2ee
 
 http://www.columbia.edu/~jxz2101/ Data structure for interviews
 
+https://practice.geeksforgeeks.org/batch/ppc-1/ : geeks for geeks specially for product based companies
+
 # Practise
 
 https://interviewing.io/
@@ -1171,6 +1231,8 @@ https://www.quora.com/q/dailycodingproblems?ch=3&share=b1a4c8fc&srid=DaXA
 - https://learning.oreilly.com/videos/from-0-to/9781788626767 (watched)
 - https://algs4.cs.princeton.edu/lectures/
 - https://cuvids.io/app/video/97/watch/
+- https://www.coursera.org/specializations/algorithms
+- https://www.coursera.org/learn/algorithms-part1/lecture/RZW72/quick-union-improvements
 
 
 # Youtube channels
@@ -1221,6 +1283,22 @@ https://github.com/ryanoasis/dev-interview-study-guide
 ## TODO
 
 - https://practice.geeksforgeeks.org/courses/must-do-interview-prep?vb=144
+
+- https://www.youtube.com/watch?v=qg0CY00qJqI&list=PLi9RQVmJD2fapKJ4DnZzAn55NJfo5IM1c
+
+- file:///C:/Users/hmnsh/OneDrive/Desktop/CI_DSA_study_guide.pdf
+
+- https://www.youtube.com/playlist?list=PLDV1Zeh2NRsDGO4--qE8yH72HFL1Km93P : Graph Theory Playlist
+
+- https://www.youtube.com/watch?v=tvw4v7FEF1w&list=PLDV1Zeh2NRsB6SWUrDFW2RmDotAfPbeHu&index=5 : Data structures playlist
+
+- https://leetcode.com/contest/biweekly-contest-25/ : leet code biweekly contests
+
+### Interesting questions yet to solve
+
+- https://leetcode.com/explore/challenge/card/30-day-leetcoding-challenge/530/week-3/3301/
+
+- https://leetcode.com/contest/biweekly-contest-25/ : old contest link leetcode
 
 
 ## Identify the Algorithm

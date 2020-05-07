@@ -81,7 +81,7 @@ use killrvideo;
 create table table1 (column1 text, column2, text, column3 int, PRIMARY KEY (column1));
 ```
 
-### Basic data types 
+### Basic data types
 
 - Text
 
@@ -91,7 +91,13 @@ create table table1 (column1 text, column2, text, column3 int, PRIMARY KEY (colu
 
 - timeuuid : genetrated via now()
 
-- timestamp
+- timestamp 
+
+- counter
+
+- inet
+
+### commands
 
 - copy command : To import data from csv
 
@@ -114,6 +120,33 @@ select * from table1 limit 10;
 
 - source : to execute cql file
 
+## Partition Key
+
+- We should use such a partition key, which is going to be used in the where clause. 
+- Partition key tells in which node my data is present.
+- Primary key is made using partition key. Partition key is part of primary key.
+- Primary key is for uniqueness and partition key is for placement.
+
+## Clustering columns
+- Its used for sorting
+- when we create a table we can mention the sort order (acs / desc)
+
+## Advanced data types
+
+### Set
+
+![Set data types](https://github.com/himkak/notes/blob/master/DB/datatype_Set.JPG)
+
+### List
+
+### Map
+
+### User Data type
+
+![User data type](https://github.com/himkak/notes/blob/master/DB/datatype_UDT.JPG)
+
+
+![User data type usage](https://github.com/himkak/notes/blob/master/DB/datatype_UDT_usage.JPG)
 
 # References
 

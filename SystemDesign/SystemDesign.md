@@ -920,6 +920,8 @@ https://martinfowler.com/articles/richardsonMaturityModel.html
 
 - https://www.udemy.com/course/aws-concepts/?LSNPUBID=JVFxdTr9V80&ranEAID=JVFxdTr9V80&ranMID=39197&ranSiteID=JVFxdTr9V80-AyFAtfbQsNYJ4TdCqktsLg
 
+- https://drive.google.com/drive/folders/10sNkyxwWbpKcQW8sydv1U9z-2-g4g6Af 
+
 ### Google System Design Interview Prep Refs
 
 - https://www.youtube.com/watch?v=Gg318hR5JY0 : Prepare for Your Google Interview: Systems Design
