@@ -1,7 +1,6 @@
 
 - https://byte-by-byte.wistia.com/medias/cwwyk06xhk?wvideo=cwwyk06xhk : recursion
-- https://www.youtube.com/playlist?list=PLDV1Zeh2NRsB6SWUrDFW2RmDotAfPbeHu : Data structures playlist by Google employee
-- https://www.youtube.com/playlist?list=PLDV1Zeh2NRsDGO4--qE8yH72HFL1Km93P : Graph playlist by Google employee
+
 - file:///C:/Users/hmnsh/OneDrive/Desktop/CI_DSA_study_guide.pdf : refs to good tutorials
 
 # Common Patterns
@@ -1197,6 +1196,8 @@ http://www.columbia.edu/~jxz2101/ Data structure for interviews
 
 https://practice.geeksforgeeks.org/batch/ppc-1/ : geeks for geeks specially for product based companies
 
+
+
 # Practise
 
 https://interviewing.io/
@@ -1233,6 +1234,8 @@ https://www.quora.com/q/dailycodingproblems?ch=3&share=b1a4c8fc&srid=DaXA
 - https://cuvids.io/app/video/97/watch/
 - https://www.coursera.org/specializations/algorithms
 - https://www.coursera.org/learn/algorithms-part1/lecture/RZW72/quick-union-improvements
+- https://www.youtube.com/playlist?list=PLDV1Zeh2NRsB6SWUrDFW2RmDotAfPbeHu : Data structures playlist by Google employee
+- https://www.youtube.com/playlist?list=PLDV1Zeh2NRsDGO4--qE8yH72HFL1Km93P : Graph playlist by Google employee
 
 
 # Youtube channels
@@ -1278,8 +1281,6 @@ https://github.com/ryanoasis/dev-interview-study-guide
 
 - https://medium.com/better-programming/the-software-engineering-study-guide-bac25b8b61eb : 142 Resources for Mastering Coding Interviews
 
-</details>
-
 ## TODO
 
 - https://practice.geeksforgeeks.org/courses/must-do-interview-prep?vb=144
@@ -1301,6 +1302,13 @@ https://github.com/ryanoasis/dev-interview-study-guide
 - https://leetcode.com/contest/biweekly-contest-25/ : old contest link leetcode
 
 
+</details>
+
+
+<details>
+<summary> General points to solve a problem (in progress)
+</summary>
+
 ## Identify the Algorithm
 
 is the data sorted :
@@ -1320,3 +1328,5 @@ Find an element closest in value to x in O(log n)
 	
 Iterating through the element in sorted order 
 	tree
+
+</details>
