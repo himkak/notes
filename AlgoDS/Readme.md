@@ -1,7 +1,4 @@
 
-- https://byte-by-byte.wistia.com/medias/cwwyk06xhk?wvideo=cwwyk06xhk : recursion
-
-- file:///C:/Users/hmnsh/OneDrive/Desktop/CI_DSA_study_guide.pdf : refs to good tutorials
 
 # Common Patterns
 
@@ -43,7 +40,9 @@
 
 - https://www.interviewbit.com/tutorial/binary-number-system/
 
-- 
+- https://practice.geeksforgeeks.org/tracks/ppc-mathematics/?batchId=221 : find the count of digits present in this number, Arithmetic Progression, Geometric Progression, quadratic equation, Mean, Median, prime number(Sieve of Eratosthenes), factorial, Permutation, Combination, 
+
+- https://www.youtube.com/watch?v=qwh3VH5rnGA : HCF & LCM
 
 
 </details>
@@ -482,6 +481,8 @@ https://www.youtube.com/watch?v=dxyYP3BSdcQ  : Fibonacci Sequence - Anatomy of r
 https://www.youtube.com/watch?v=KYH83T4q6Vs  : Reverse a linked list using recursion    
 
 https://www.geeksforgeeks.org/modular-exponentiation-recursive/
+
+https://byte-by-byte.wistia.com/medias/cwwyk06xhk?wvideo=cwwyk06xhk
 
 
 
@@ -1017,6 +1018,8 @@ The cost of the spanning tree is the sum of the weights of all the edges in the 
 
 - https://www.hackerearth.com/practice/algorithms/dynamic-programming/introduction-to-dynamic-programming-1/tutorial/
 
+- Maximum Subarray Problem : https://medium.com/@rsinghal757/kadanes-algorithm-dynamic-programming-how-and-why-does-it-work-3fd8849ed73d
+
 </details>
 
 <details>
@@ -1236,6 +1239,7 @@ https://www.quora.com/q/dailycodingproblems?ch=3&share=b1a4c8fc&srid=DaXA
 - https://www.coursera.org/learn/algorithms-part1/lecture/RZW72/quick-union-improvements
 - https://www.youtube.com/playlist?list=PLDV1Zeh2NRsB6SWUrDFW2RmDotAfPbeHu : Data structures playlist by Google employee
 - https://www.youtube.com/playlist?list=PLDV1Zeh2NRsDGO4--qE8yH72HFL1Km93P : Graph playlist by Google employee
+- https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/lecture-videos/ : MIT Course
 
 
 # Youtube channels
