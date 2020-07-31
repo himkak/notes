@@ -11,20 +11,12 @@
 - https://www.youtube.com/watch?v=DROZVHObeko : Permutation formula | Probability and combinatorics | Probability and Statistics | Khan Academy
 		- No of ways in which n objects can be placed in k spots : nPk = n!/(n-k)!
 		- n is the no of objects, k is the no of slots.
+- https://youtu.be/Mm0VNPars2M : permutation for repeating chars : nPk/[!(no of times a numer is repeating) *!(no of times next numer is repeating)...]
 
 - https://www.youtube.com/watch?v=p8vIcmr_Pqo : Combination formula | Probability and combinatorics | Probability and Statistics | Khan Academy
-		- In combination combinations with same lements is considered as single combination, eg : ABCD & DACB both are same in combination but diff in permutation
-		- No of combinations in which n objects can be placed in k spots : nCk = n!/(k! * (n-k)!)
+		- In combination combinations with same elments is considered as single combination, eg : ABCD & DACB both are same in combination but diff in permutation
+		- No of combinations in which n objects can be placed in k spots : ** nCk = n!/(k! * (n-k)!) **
 
-- https://www.youtube.com/watch?v=mJG1DManmLc : How to Swap Two Numbers using XOR Operator in Java.
-		- Swap a & b using xor : 
-		``` a=a^b
-			b=a^b
-			a=a^b
-		``` 
-- https://www.geeksforgeeks.org/find-element-appears-array-every-element-appears-twice/?ref=rp : Find the element that appears once in an array where every other element appears twice
-		- xor of a number with itself is 0
-		- Do a xor of all the numbers in array and u will get the result
 		
 - https://www.youtube.com/watch?v=HuZJqRDOPo0 : Find duplicates in O(n) time and O(1) extra space | GeeksforGeeks
 		- find A[abs(A[i])], if +ve mark as -ve, if -ve number is duplicate
@@ -44,8 +36,34 @@
 
 - https://www.youtube.com/watch?v=qwh3VH5rnGA : HCF & LCM
 
+- https://medium.com/solvingalgo/solving-algorithmic-problems-find-a-duplicate-in-an-array-3d9edad5ad41#:~:text=The%20solution%20is%20to%20consider,the%20value%20of%20that%20index.&text=We%20iterate%20over%20each%20element,its%20index%20is%20a%20duplicate. : Find duplicate number
+
+- sum of numbers from 1 to n = n(n+1)/2
+
+### Karatsuba Multiplication
+
 
 </details>
+
+
+## Bit Manipulation
+
+- https://www.hackerearth.com/practice/basic-programming/bit-manipulation/basics-of-bit-manipulation/tutorial/
+
+- https://www.geeksforgeeks.org/find-the-element-that-appears-once/
+
+- https://www.youtube.com/watch?v=4u0fSw1AOR4&feature=youtu.be : Reverse Bits
+
+- https://www.youtube.com/watch?v=mJG1DManmLc : How to Swap Two Numbers using XOR Operator in Java.
+		- Swap a & b using xor : 
+		``` a=a^b
+			b=a^b
+			a=a^b
+		``` 
+		
+- https://www.geeksforgeeks.org/find-element-appears-array-every-element-appears-twice/?ref=rp : Find the element that appears once in an array where every other element appears twice
+		- xor of a number with itself is 0
+		- Do a xor of all the numbers in array and u will get the result
 
 <details>
 <summary> Complexity Analysis
@@ -75,10 +93,19 @@
 - https://www.geeksforgeeks.org/analysis-algorithms-big-o-analysis/
 
 **Definition**
-It is about, how quickly runtime grows relative to the input, as the input gets arbitrarily large.
+- It is about, how quickly runtime grows relative to the input, as the input gets arbitrarily large.
+- Big O is used to identify runtime of algo growth for the worst case scenario
+- Best case time complexity is represented by Omega Ω
+- When best case and worst case is same we can represent it with theta  θ
+- used to compare the efficiency of an algorithm
+- to measure, how quickly the runtime of an algorithm grows when input size grows.
+- while calculating the O(n) complexity we ignore the smaller terms and the constants
+
 
 **Constant time Complexity**
 - O(1)
+- find the length of a collection
+
 
 **Logarithmic Complexity**
 - O(log n)
@@ -86,6 +113,7 @@ It is about, how quickly runtime grows relative to the input, as the input gets 
 
 **Linear time complexity**
 - O(n)
+- Linear search
 
 **Linearithmic Complexity**
 - O(n*log n)
@@ -94,6 +122,13 @@ It is about, how quickly runtime grows relative to the input, as the input gets 
 **Quadratic Complexity**
 - O(n^2)
 - bubble sort
+
+**Exponential**
+- O(2^n)
+
+**Factorial**
+- O(n!) : Travelling Salesman
+
 
 
 </details>
@@ -330,10 +365,10 @@ Problems where you need to find the combinations or permutations of a given set
 </details>
 
 <details>
-<summary> Modified binary search
+<summary> binary search
 </summary>
 
-## Modified binary search
+## Binary Search
 Whenever you are given a sorted array, linked list, or matrix, and are asked to find a certain element, the best algorithm you can use 
 is the Binary Search. This pattern describes an efficient way to handle all problems involving Binary Search.
 The patterns looks like this for an ascending order set:
@@ -344,7 +379,9 @@ If ‘key’ isn’t equal to the index middle:
 Check if key < arr[middle]. If it is reduce your search to end = middle — 1
 Check if key > arr[middle]. If it is reduce your search to start = middle + 1
 
-- https://www.youtube.com/watch?v=OAZc1zwjERU : Binary Search - Iterative Implementation and common errors
+- https://www.youtube.com/watch?v=P3YID7liBug : Theory: HackerRank Binary Search
+
+- https://www.youtube.com/watch?v=OAZc1zwjERU : Theory: Binary Search - Iterative Implementation and common errors
 
 - https://www.topcoder.com/community/competitive-programming/tutorials/binary-search/
 
@@ -354,6 +391,14 @@ Check if key > arr[middle]. If it is reduce your search to start = middle + 1
 
 **Problems featuring the Modified Binary Search pattern:**
 - Order-agnostic Binary Search (easy)Search in a Sorted Infinite Array (medium)
+
+- square root of a number : https://www.ideserve.co.in/learn/square-root-of-a-number
+
+- Median of two sorted arrays : 
+	- of same size : https://www.youtube.com/watch?v=MHNTl_NvOj0
+	- of diff size : https://www.youtube.com/watch?v=LPFhl65R7ww
+
+- Painter partition problem : https://www.youtube.com/watch?v=9BnC7orwkNA&t=1s
 
 </details>
 
@@ -462,9 +507,7 @@ That’s what backtracking is, re-tracing back the steps and discarding the choi
 
 ### Recursion theory
 
-https://leetcode.com/explore/learn/card/recursion-i/250/principle-of-recursion/1439/ 
-
-https://www.interviewbit.com/courses/programming/topics/backtracking/
+- https://leetcode.com/explore/learn/card/recursion-i/250/principle-of-recursion/1439/ 
 
 - https://www.youtube.com/watch?v=KEEKn7Me-ms : Algorithms: Recursion : hackerrank 
 
@@ -487,6 +530,8 @@ https://byte-by-byte.wistia.com/medias/cwwyk06xhk?wvideo=cwwyk06xhk
 
 
 ### Backtracking theory
+
+https://www.interviewbit.com/courses/programming/topics/backtracking/
 
 https://www.interviewbit.com/tutorial/backtracking/
 
@@ -620,9 +665,13 @@ https://www.interviewbit.com/courses/programming/topics/linked-lists/
 - Expression Evaluation
 
 ### Stack tutorial videos
-https://www.youtube.com/watch?v=F1F2imiOJfk [MANDATORY]
+https://www.youtube.com/watch?v=F1F2imiOJfk : Theory [MANDATORY] Data structures: Introduction to stack : mycodeschool
 
-https://www.youtube.com/watch?v=wjI1WNcIntg [MANDATORY]
+- https://www.youtube.com/watch?v=wjI1WNcIntg [MANDATORY] : HackerRank
+
+https://www.youtube.com/watch?v=m4hvxzLoN_I Monotonic stack
+- https://leetcode.com/contest/biweekly-contest-28/problems/final-prices-with-a-special-discount-in-a-shop/
+- https://leetcode.com/problems/daily-temperatures/
 
 https://www.hackerearth.com/practice/data-structures/stacks/basics-of-stacks/tutorial/
 
@@ -640,6 +689,7 @@ https://www.youtube.com/watch?v=QZOLb0xHB_Q : Check for balanced parentheses usi
 	- solution : https://github.com/himkak/interviewbit/blob/master/src/com/interviewbit/stacksandqueues/EvaluateExpression.java
 
 - problem : https://www.interviewbit.com/problems/min-stack/
+	- https://www.youtube.com/watch?v=WxCuL3jleUA
 	- solution : https://github.com/himkak/interviewbit/blob/master/src/com/interviewbit/stacksandqueues/MinStack.java
 
 - problem : https://www.interviewbit.com/problems/nearest-smaller-element/
@@ -647,25 +697,89 @@ https://www.youtube.com/watch?v=QZOLb0xHB_Q : Check for balanced parentheses usi
 	
 - https://www.youtube.com/watch?v=VNbkzsnllsU&list=PLq9MXGH7Fkt-jNNDHsuMIPFHsYBfD4LrZ&index=15&t=606s : Coding Interview Problem: Largest Rectangle in a Histogram
 
-- https://www.ideserve.co.in/learn/next-great-element-in-an-array : next biggest element in an array
-
 - https://www.interviewbit.com/problems/evaluate-expression/ : Reverse Polish Notation.
+
+#### Monotonic Stacks
+
+- When ever we have to find the next smaller or bigger to the right or left, we use monotonic stack.
+
+- https://www.youtube.com/watch?v=TunTV2-griM
+
+- https://www.youtube.com/watch?v=sDKpIO2HGq0
+- https://www.youtube.com/watch?v=8BDKB2yuGyg
+- https://www.ideserve.co.in/learn/next-great-element-in-an-array
+
+- If we have to find smaller to right, we traverse left to right.  
+Since we have to find smaller so again we have to create monotonic increasing stack.
+
+```
+public int[] findSmallerToRight(int[] input){
+	int[] res= new int[input.length];
+	Stack<Integer> st=new Stack<>();
+	
+	for(int i=0;i<input.length;i++){
+	//since it is increasing stack, so we remove the bigger elems from stack.
+	while(!st.isEmpty() && input[i] < input[st.peek()]){
+		st.pop();
+		//which ever elem removes the elem from stack that is the next smaller elem, for that elem removed from stack.
+		res[st.peek()]=i;
+	}
+	st.add(i);
+	res[i]=-1;
+	}
+	
+	return res;
+}
+```
+
+
+- If we have to find smaller to the left, we traverse right to left.  
+Since we have to find smaller so again we have to create monotonic increasing stack.
+
+
+-If we have to find larger to the right, we traverse left to right.  
+Since we have to find larger, so we create monotonic decreasing stack.
+
+
+
+- **Summary** : move towards the direction in which we have to find the next elem.  
+Make opposite monotonic stack of what u have to find. If we have to find smaller, create increasing stack, if e have to find bigger, the we create decreasin stack.
+
+
+
 
 ### Queue
 
-https://www.youtube.com/watch?v=XuCbpw6Bj1U : Data structures: Introduction to Queues [MANDATORY]
+- https://www.youtube.com/watch?v=XuCbpw6Bj1U : Data structures: Introduction to Queues [MANDATORY]
 
-https://www.youtube.com/watch?v=okr-XE8yTO8 : Data structures: Array implementation of Queue [MANDATORY]
+- https://www.youtube.com/watch?v=okr-XE8yTO8 : Data structures: Array implementation of Queue [MANDATORY]
 
-https://www.youtube.com/watch?v=A5_XdiK4J8A : Data structures: Linked List implementation of Queue [MANDATORY]
+- https://www.youtube.com/watch?v=A5_XdiK4J8A : Data structures: Linked List implementation of Queue [MANDATORY]
 
-https://www.hackerearth.com/practice/data-structures/queues/basics-of-queues/tutorial/
+- https://www.hackerearth.com/practice/data-structures/queues/basics-of-queues/tutorial/
 
-#### Interesting problems
+#### Queue for BFS
 
+- BFS : https://leetcode.com/explore/learn/card/queue-stack/231/practical-application-queue/1376/
+- BFS Template : https://leetcode.com/explore/learn/card/queue-stack/231/practical-application-queue/1372/
 - https://leetcode.com/explore/learn/card/queue-stack/231/practical-application-queue/1371/ : uses queue and BFS
 
 </details>
+
+<details>
+<summary> Pattern Matching
+</summary>
+
+## Pattern Matching
+
+### Rabin karp
+- https://www.youtube.com/watch?v=qQ8vS2btsxI&t=36s
+
+### Knuth-Morris-Pratt KMP String Matching Algorithm
+- https://www.youtube.com/watch?v=V5-7GzOfADQ
+
+</details>
+
 <details>
 <summary> Tree
 </summary>
@@ -807,6 +921,8 @@ If the problem requires searching for something where the node is closer to a le
 - All Paths for a Sum (medium)
 
 
+**Find the lowest common ancestor of two leafs nodes** using eulerian path method
+- https://www.youtube.com/watch?v=sD1IoalFomA&list=PLDV1Zeh2NRsDGO4--qE8yH72HFL1Km93P&index=13
 
 ##### In-Order Traversal
 In-order traversal means to "visit" (often, print) the left branch, then the current node, and finally, the right
@@ -884,20 +1000,41 @@ In a post-order traversal, the root is always the last node visited.
 
 - https://www.youtube.com/watch?v=5hPfm_uqXmw : Graph representation in Data Structure(Graph Theory)|Adjacency Matrix and Adjacency List
 
+- https://www.youtube.com/playlist?list=PLDV1Zeh2NRsDGO4--qE8yH72HFL1Km93P : Graph and Tree Tutorials by a Google Dev
+
+### Representation
+
+- https://www.khanacademy.org/computing/computer-science/algorithms/graph-representation/a/representing-graphs
+
+### Topological Sort
+
+In computer science, a topological sort or topological ordering of a directed graph is a linear ordering of its vertices such that for every directed edge uv from vertex u to vertex v, u comes before v in the ordering. For instance, the vertices of the graph may represent tasks to be performed, and the edges may represent constraints that one task must be performed before another; in this application, a topological ordering is just a valid sequence for the tasks. A topological ordering is possible if and only if the graph has no directed cycles, that is, if it is a directed acyclic graph (DAG). Any DAG has at least one topological ordering, and algorithms are known for constructing a topological ordering of any DAG in linear time.
+
+Eg : Suppose I have to do some courses, and every course has some prerequisites courses. So now i want to know what is the order of executing courses or info around it. So we can use topological sort.
+
+- https://www.youtube.com/watch?v=eL-KzMXSXXI&list=PLDV1Zeh2NRsDGO4--qE8yH72HFL1Km93P&index=15 : Theory
+
+- https://leetcode.com/problems/course-schedule/ : problem with solution
+
 ### Shortest Path Algos:
 
 https://www.hackerearth.com/practice/algorithms/graphs/shortest-path-algorithms/tutorial/
 
 - start by setting all the distances between source and all the nodes as infinity, except from source to source which will be 0
 
+#### Single Source Shortest Path
+
+- https://www.youtube.com/watch?v=TXkDpqjDMHA&list=PLDV1Zeh2NRsDGO4--qE8yH72HFL1Km93P&index=16 : Shortest/Longest path on a Directed Acyclic Graph (DAG) | Graph Theory
+
+- In this algo, we first do topological sort and them pick the next node acc to topological sort.
 
 #### Dijkstra's Algorithm
 
 - Greedy Algo
 
-- Used to find the cost of shortest path from a source to a destination node, in a weighted graph. Aslo called **Single Source Sohrtest Path** (SSSP)
+- Used to find the cost of shortest path from a source to a destination node, in a weighted graph. 
 - provides shortest path from one node to all other nodes
-- Similar to BFS but Uses priority Queue instead of queue.
+- **Similar to BFS but Uses priority Queue instead of queue.**
 - once all the neighbours of the node are loaded into priority queue, the node is moved to processed. Every time while picking a node, we check if the node is processed, if so skip it.
 
 	- https://www.youtube.com/watch?v=GazC3A4OQTE : Dijkstra's Algorithm - Computerphile (****)
@@ -911,6 +1048,8 @@ https://www.hackerearth.com/practice/algorithms/graphs/shortest-path-algorithms/
 	- https://www.geeksforgeeks.org/dijkstras-shortest-path-algorithm-greedy-algo-7/
 
 	- https://www.geeksforgeeks.org/printing-paths-dijkstras-shortest-path-algorithm/
+	
+	- https://www.youtube.com/watch?v=pSqmAO-m7Lk&list=PLDV1Zeh2NRsDGO4--qE8yH72HFL1Km93P&index=17 : Dijkstra's Shortest Path Algorithm | Graph Theory  (****)
 	
 **Problems**
 - No importance given to the direction, inspite we might be traversing in the opposite direction but destination node is in the opposite direction.
@@ -1002,6 +1141,11 @@ The cost of the spanning tree is the sum of the weights of all the edges in the 
 - Coin Changing Problem  
 - Levenshtein Distance  
 
+- https://www.youtube.com/playlist?list=PLVrpF4r7WIhTT1hJqZmjP10nxsmrbRvlf  : playlist for basics
+- https://www.topcoder.com/community/competitive-programming/tutorials/dynamic-programming-from-novice-to-advanced/
+- https://www.youtube.com/channel/UClnwNEngsXoIp_tgJ2jZWfw
+- https://leetcode.com/discuss/general-discussion/458695/dynamic-programming-patterns
+
 - https://leetcode.com/discuss/general-discussion/491522/Dynamic-Programming-Questions-Thread?fbclid=IwAR1jQGU1Ox3_omZ_n7wdYfVM1Z7E3XyQDmTlJ0YNNcVLZrlHFBevvxM0g2o : lsit of famous DP questions
 
 - https://coursehunters.online/t/the-interview-cake-course-6-dynamic-programming-and-recursion/3183
@@ -1019,6 +1163,21 @@ The cost of the spanning tree is the sum of the weights of all the edges in the 
 - https://www.hackerearth.com/practice/algorithms/dynamic-programming/introduction-to-dynamic-programming-1/tutorial/
 
 - Maximum Subarray Problem : https://medium.com/@rsinghal757/kadanes-algorithm-dynamic-programming-how-and-why-does-it-work-3fd8849ed73d
+
+- https://www.youtube.com/watch?v=xhod_0DxkNM : Longest Common Subsequence
+
+- https://www.youtube.com/watch?v=CE2b_-XfVDk : longest increasing subsequence
+
+
+### Steps to solve 
+1. Define the objective function
+2. Identify the base case
+3. Write the recurrence relation for the optimized objective function
+4. what is the order of execution
+5. Where to look for thr answer
+
+#### Eg 1: Jump Game
+- https://leetcode.com/articles/jump-game/
 
 </details>
 
@@ -1041,6 +1200,9 @@ The cost of the spanning tree is the sum of the weights of all the edges in the 
 - https://www.youtube.com/watch?v=HqPJF2L5h9U&t=870s
 
 - https://en.wikipedia.org/wiki/Heap_%28data_structure%29
+
+- https://www.youtube.com/watch?v=wptevk0bshY&list=PLDV1Zeh2NRsB6SWUrDFW2RmDotAfPbeHu&index=14 : Priority Queue Introduction
+
 
 ![Heap In Array](https://github.com/himkak/notes/blob/master/AlgoDS/HeapInArray.PNG)
 
@@ -1120,7 +1282,14 @@ For zero based array
 
 ![Trie](https://github.com/himkak/notes/blob/master/AlgoDS/Trie.PNG)
 
+- https://www.youtube.com/watch?v=zIjfhVPRZCg&t=7s : Data Structures: Tries : Hackerrank
+
 - https://www.geeksforgeeks.org/find-all-shortest-unique-prefixes-to-represent-each-word-in-a-given-list/
+
+- https://leetcode.com/discuss/general-discussion/680706/article-on-trie-general-template-and-list-of-problems
+
+
+
 
 </details>
 
@@ -1203,6 +1372,12 @@ https://practice.geeksforgeeks.org/batch/ppc-1/ : geeks for geeks specially for 
 
 # Practise
 
+https://app.codesignal.com/arcade/intro/level-1
+
+https://leetcode.com/discuss/general-discussion/675445/facebook-interview-experiences-all-combined-from-lc-till-date-07-jun-2020
+
+https://leetcode.com/discuss/general-discussion/677506/top-50-google-tagged-questions-with-links
+
 https://interviewing.io/
 
 https://www.hackerrank.com/
@@ -1231,6 +1406,16 @@ https://www.quora.com/q/dailycodingproblems?ch=3&share=b1a4c8fc&srid=DaXA
 
 
 # Video Tutorials
+- https://www.coursera.org/specializations/algorithms ( 4 courses series from stanford) (must watch) (to access free : https://www.classcentral.com/report/coursera-signup-for-free/) 
+- https://www.coursera.org/learn/algorithms-part1
+- https://www.coursera.org/learn/algorithms-part2
+- https://www.youtube.com/playlist?list=PLs8TmeZHJEeF2UMA8KCI6g0BMDrVUgB0r : Data Structure and algorithm by Sesh Venugopal
+
+- https://www.edx.org/course/algorithms-design-and-analysis : (stanford)
+- https://www.youtube.com/playlist?list=PLXFMmlk03Dt7Q0xr1PIAriY5623cKiH7V
+- https://www.youtube.com/playlist?list=PLXFMmlk03Dt5EMI2s2WQBsLsZl7A5HEK6
+- http://timroughgarden.org/videos.html
+
 - https://www.youtube.com/channel/UCMNkvKnD3mo3Jj9eTwJllWw (watched)
 - https://learning.oreilly.com/videos/from-0-to/9781788626767 (watched)
 - https://algs4.cs.princeton.edu/lectures/
@@ -1240,6 +1425,7 @@ https://www.quora.com/q/dailycodingproblems?ch=3&share=b1a4c8fc&srid=DaXA
 - https://www.youtube.com/playlist?list=PLDV1Zeh2NRsB6SWUrDFW2RmDotAfPbeHu : Data structures playlist by Google employee
 - https://www.youtube.com/playlist?list=PLDV1Zeh2NRsDGO4--qE8yH72HFL1Km93P : Graph playlist by Google employee
 - https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/lecture-videos/ : MIT Course
+- https://www.youtube.com/playlist?list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb : MIT 6006 on youtube
 
 
 # Youtube channels
@@ -1267,6 +1453,12 @@ https://www.quora.com/How-much-time-did-you-spend-preparing-for-Googles-intervie
 
 
 https://www.interviewcake.com/google-interview-questions
+
+https://www.coursera.org/learn/algorithms-part1#syllabus : coursera video tutorial
+
+https://www.coursera.org/learn/cs-tech-interview : Mastering the Software Engineering Interview
+
+https://buildyourfuture.withgoogle.com/ : 
 
 ### Amazon & Microsoft
 
@@ -1315,22 +1507,29 @@ https://github.com/ryanoasis/dev-interview-study-guide
 
 ## Identify the Algorithm
 
-is the data sorted :
-	If u need to find 1 element in a range
-		Binary Search
-	If u need to find a set of elements that fulfill certain constraints
-		Tow pointer
+- is the data sorted :
+	-- If u need to find 1 element in a range
+		--- Binary Search
+	-- If u need to find a set of elements that fulfill certain constraints
+		--- Binary search / Tow pointer
 
-you want to search something
-	use hashmap
-you want to do operation on no of occurences of words
-	hashMap
 
-you want to find the min/max
-Find an element closest in value to x in O(log n)
-	heap
+- you want to search something
+	-- use set
+- you want to do operation on no of occurences of words
+	- hashMap
+
+- you want to find the min/max
+- Find an element closest in value to x in O(log n)
+	-- heap
 	
-Iterating through the element in sorted order 
-	tree
+- Iterating through the element in sorted order 
+	-- tree
+	
+- When ever we need to process nodes in some order, think of Queue & Stacks
+	-- Queue : shortest path, BFS
+	
+- Range minimum queries in O(1) time
+	-- Sparse Table 
 
 </details>

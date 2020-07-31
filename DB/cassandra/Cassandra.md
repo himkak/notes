@@ -7,7 +7,7 @@
 - Cassandra stores data in table model, difference from relational is, a table can be distributed in different nodes. So we store denormalized data in cassandra.
 - Apache cassendra is written in java
 
-![Hash Ring](https://github.com/himkak/notes/blob/master/DB/Cassandra_HashRing.PNG)
+![Hash Ring](https://github.com/himkak/notes/blob/master/DB/cassandra/Cassandra_HashRing.PNG)
 
 - In CAP theorem, cassandra adheres AP
 - Cassandra has different configurations to provide different behaviours
@@ -18,9 +18,9 @@
 
 - keyspace is similar to schema
 
-![Write Path](https://github.com/himkak/notes/blob/master/DB/Cassandra_WritePath.PNG)
+![Write Path](https://github.com/himkak/notes/blob/master/DB/cassandra/Cassandra_WritePath.PNG)
 
-![Read Path](https://github.com/himkak/notes/blob/master/DB/Cassandra_ReadPath.PNG)
+![Read Path](https://github.com/himkak/notes/blob/master/DB/cassandra/Cassandra_ReadPath.PNG)
 
 - In read the latest time stamp always wins
 
@@ -41,14 +41,14 @@
 
 - **Clustering column** is used to maintain order of data. we can even order at runtime using order by.
 - In the below examplen we are creating primary key with cluster keys, this helps to maintain order, and adding id helps to maintain uniqueness.
-![Clustering Column](https://github.com/himkak/notes/blob/master/DB/Cassandra_ClusteringColumn.PNG)
+![Clustering Column](https://github.com/himkak/notes/blob/master/DB/cassandra/Cassandra_ClusteringColumn.PNG)
 
 - In the above image state is the partition key.
 
-![Querying Clustering Column](https://github.com/himkak/notes/blob/master/DB/Cassandra_QueryingClusteringColumn.PNG)
+![Querying Clustering Column](https://github.com/himkak/notes/blob/master/DB/cassandra/Cassandra_QueryingClusteringColumn.PNG)
 
 
-![Changing Default Order](https://github.com/himkak/notes/blob/master/DB/Cassandra_ClusteringColumnChangingDefaultOrder.PNG)
+![Changing Default Order](https://github.com/himkak/notes/blob/master/DB/cassandra/Cassandra_ClusteringColumnChangingDefaultOrder.PNG)
 
 
 ## How to connect via client
@@ -135,7 +135,7 @@ select * from table1 limit 10;
 
 ### Set
 
-![Set data types](https://github.com/himkak/notes/blob/master/DB/datatype_Set.JPG)
+![Set data types](https://github.com/himkak/notes/blob/master/DB/cassandra/datatype_Set.JPG)
 
 ### List
 
@@ -143,10 +143,10 @@ select * from table1 limit 10;
 
 ### User Data type
 
-![User data type](https://github.com/himkak/notes/blob/master/DB/datatype_UDT.JPG)
+![User data type](https://github.com/himkak/notes/blob/master/DB/cassandra/datatype_UDT.JPG)
 
 
-![User data type usage](https://github.com/himkak/notes/blob/master/DB/datatype_UDT_usage.JPG)
+![User data type usage](https://github.com/himkak/notes/blob/master/DB/cassandra/datatype_UDT_usage.JPG)
 
 # References
 

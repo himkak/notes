@@ -271,6 +271,8 @@ A type of hashing that minimizes the number of keys that need to be remapped whe
 
 - http://tom-e-white.com/2007/11/consistent-hashing.html : also contains sample implementation, using TreeMap
 
+- https://www.ably.io/blog/implementing-efficient-consistent-hashing/
+
 
 ### Caching 
 
@@ -587,7 +589,49 @@ Level 3 - Hypermedia Controls
 
 ![Rchardson Maturity Model](https://github.com/himkak/notes/blob/master/SystemDesign/Http_RichardsonMaturityModel.png)
 
-https://martinfowler.com/articles/richardsonMaturityModel.html
+- https://martinfowler.com/articles/richardsonMaturityModel.html
+
+- https://restfulapi.net/resource-naming/
+
+- https://pages.apigee.com/rs/351-WXY-166/images/Web-design-the-missing-link-ebook-2016-11.pdf
+
+##### Rest Best practises
+
+- Use nouns to represent resources
+- Use forward slash (/) to indicate hierarchical relationships
+- Do not use trailing forward slash (/) in URIs
+- Use hyphens (-) to improve the readability of URIs
+- Do not use underscores ( _ )
+- Use lowercase letters in URIs
+- Never use CRUD function names in URIs
+- Use query component to filter URI collection
+- resources archetype can be divided into 4 types :
+	document : 
+			A document resource is a singular concept that is akin to an object instance or database record
+			Use “singular” name to denote document resource archetype.
+
+				http://api.example.com/device-management/managed-devices/{device-id}
+				http://api.example.com/user-management/users/{id}
+				http://api.example.com/user-management/users/admin
+	collection :
+			A collection resource is a server-managed directory of resources.
+			Use “plural” name to denote collection resource archetype.
+
+			http://api.example.com/device-management/managed-devices
+			http://api.example.com/user-management/users
+			http://api.example.com/user-management/users/{id}/accounts
+	store :
+			A store is a client-managed resource repository. A store resource lets an API client put resources in, get them back out, and decide when to delete them
+			Use “plural” name to denote store resource archetype.
+
+			http://api.example.com/song-management/users/{id}/playlists
+	controller :
+			A controller resource models a procedural concept. Controller resources are like executable functions, with parameters and return values; inputs and outputs.
+			Use “verb” to denote controller archetype.
+
+			http://api.example.com/cart-management/users/{id}/cart/checkout
+			http://api.example.com/song-management/users/{id}/playlist/play
+
 
 
 ### GRPC
@@ -835,6 +879,7 @@ https://martinfowler.com/articles/richardsonMaturityModel.html
 
 ### Rate limiting
 
+- https://www.ably.io/blog/distributed-rate-limiting-scale-your-platform/
 	
 	
 ### Auto Suggest System
@@ -856,6 +901,9 @@ https://martinfowler.com/articles/richardsonMaturityModel.html
 
 
 ## References:
+
+- https://drive.google.com/drive/folders/1OOM9DvWK3uWrlC-itxycbYroDS439Fhv : system design from algo-expert...
+- https://drive.google.com/drive/u/0/folders/1nDXkIzCQ1KQ2DnovRqSkMOTwmLzXA5iX : system design foundation...
 
 - https://github.com/donnemartin/system-design-primer/tree/master/solutions/object_oriented_design : sample oops problem
 
@@ -943,5 +991,11 @@ https://martinfowler.com/articles/richardsonMaturityModel.html
 - https://coursehunters.online/t/educative-io-design-gurus-grokking-the-system-design-interview-part-5/584
 
 
+### Overview of Realtime Streaming Protocols
+- https://assets.ctfassets.net/3prze68gbwl1/5fKNVB8OWEC1pr7h96jnO3/d1ee79e160398554893158370269839c/overview-of-realtime-streaming-protocols.pdf
+
+### GCP course in coursera
+
+-  https://www.coursera.org/specializations/gcp-architecture?ranMID=40328&ranEAID=vedj0cWlu2Y&ranSiteID=vedj0cWlu2Y-8q8Xs1UPwqz6Z6XXL6MH1w&siteID=vedj0cWlu2Y-8q8Xs1UPwqz6Z6XXL6MH1w&utm_content=10&utm_medium=partners&utm_source=linkshare&utm_campaign=vedj0cWlu2Y
 
 </details>
