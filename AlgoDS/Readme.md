@@ -46,7 +46,7 @@
 </details>
 
 <details>
-<summary> Mathematics
+<summary> Bit Manipulation
 </summary>
 
 ## Bit Manipulation
