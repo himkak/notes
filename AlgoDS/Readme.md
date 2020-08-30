@@ -854,9 +854,13 @@ All levels will be completely filled
 
 - https://www.youtube.com/watch?v=9RHO6jU--GU : Binary tree traversal - breadth-first and depth-first strategies
 
+- https://leetcode.com/explore/learn/card/data-structure-tree/134/traverse-a-tree/992/
+
 - https://www.geeksforgeeks.org/bfs-vs-dfs-binary-tree/
 
 - https://towardsdatascience.com/4-types-of-tree-traversal-algorithms-d56328450846
+
+
 
 #### BFS
 
@@ -970,6 +974,10 @@ void postOrderTraversal(TreeNode node) {
 In a post-order traversal, the root is always the last node visited.
 
 
+### Fenwick tree
+- Also called **Binary index tree**
+
+- https://www.youtube.com/watch?v=RgITNht_f4Q&list=PLDV1Zeh2NRsB6SWUrDFW2RmDotAfPbeHu&index=38
 
 
 </details>
@@ -983,12 +991,13 @@ In a post-order traversal, the root is always the last node visited.
 
 ## Graphs
 
+### References
+
+- https://www.youtube.com/playlist?list=PLq9MXGH7Fkt9bh69QxtMXPbdfL57qPbYq : My Graph playlist, with all liked videos in learning order
+
 - https://www.hackerearth.com/practice/algorithms/graphs/graph-representation/tutorial/
 
 - https://www.interviewbit.com/courses/programming/topics/graph-data-structure-algorithms/
-
-- https://www.youtube.com/watch?v=zaBhtODEL0w : Algorithms: Graph Search, DFS and BFS : HackerRank
-
 
 - https://www.youtube.com/watch?v=gXgEDyodOJU : Data structures: Introduction to graphs
 
@@ -998,13 +1007,57 @@ In a post-order traversal, the root is always the last node visited.
 
 - https://www.interviewbit.com/tutorial/depth-first-search/
 
-- https://www.youtube.com/watch?v=5hPfm_uqXmw : Graph representation in Data Structure(Graph Theory)|Adjacency Matrix and Adjacency List
+- C:\Users\hmnsh\Documents\study\library\AlgoDs\Educative.io - Grokking the Coding Interview - Patterns for Coding Questions\Educative.io - Grokking the Coding Interview - Patterns for Coding Questions\17. Pattern Topological Sort (Graph)
 
 - https://www.youtube.com/playlist?list=PLDV1Zeh2NRsDGO4--qE8yH72HFL1Km93P : Graph and Tree Tutorials by a Google Dev
+
+- https://leetcode.com/discuss/general-discussion/655708/graph-for-beginners-problems-pattern-sample-solutions/562734 : practise|  problems separated add to graph sub topic wise
+
+- https://leetcode.com/discuss/general-discussion/655708/Graph-For-Beginners-Problems-or-Pattern-or-Sample-Solutions
+
 
 ### Representation
 
 - https://www.khanacademy.org/computing/computer-science/algorithms/graph-representation/a/representing-graphs
+
+- https://www.youtube.com/watch?v=5hPfm_uqXmw : Graph representation in Data Structure(Graph Theory)|Adjacency Matrix and Adjacency List
+
+- https://www.youtube.com/watch?v=WQ2Tzlxl_Xo
+
+#### Adjacency Matrix
+
+- space complexity : O(n^2)
+- good for dense graph
+
+#### Adjacency List
+
+- space complexity : O(n + e)     [2e since every edge is written 2 times]
+- good for sparse graph
+
+### Traversal
+
+- https://www.youtube.com/watch?v=zaBhtODEL0w : Hackerrank Algorithms: Graph Search, DFS and BFS By Gayle Laakmann McDowell
+Note : To find shortest path between 2 nodes use BFS
+
+- https://leetcode.com/explore/learn/card/data-structure-tree/134/traverse-a-tree/
+
+#### BFS
+
+- runtime complexity : O(V+E)
+
+- https://youtu.be/ls4cHglfc0g : BFS
+
+- https://www.youtube.com/watch?v=pyNl0ESkH24
+
+- https://www.youtube.com/watch?v=ZVJFOrsHxMs : Breadth-first Search (BFS) on Graphs Part 2 - Implementation
+
+- https://www.youtube.com/watch?v=KiCBXu4P-2Y : Breadth First Search grid shortest path | Graph Theory
+
+#### DFS
+
+- https://youtu.be/fI6X6IBkzcw
+
+
 
 ### Topological Sort
 
@@ -1021,6 +1074,10 @@ Eg : Suppose I have to do some courses, and every course has some prerequisites 
 https://www.hackerearth.com/practice/algorithms/graphs/shortest-path-algorithms/tutorial/
 
 - start by setting all the distances between source and all the nodes as infinity, except from source to source which will be 0
+
+#### Shortest path in a grid
+
+- https://www.youtube.com/watch?v=KiCBXu4P-2Y : Breadth First Search grid shortest path | Graph Theory
 
 #### Single Source Shortest Path
 
@@ -1081,16 +1138,34 @@ The cost of the spanning tree is the sum of the weights of all the edges in the 
 
 - no of spanning trees possible from a graph = (noOfEdges)* (noOfEdges - noOfVertices) - no of cycles in the graph
 
+- Minimum spanning tree is created by using greedy algorithm. You select the vertex with minimum weight, if it connects to unvisited edge.
+
+- If each edge has distinct weight, there is only one MST possible
+
+- Disconnected graphs doesnt contains any Spanning Tree
+
 - https://www.youtube.com/watch?v=4ZlRH0eK-qQ
 
 - https://www.hackerearth.com/practice/algorithms/graphs/minimum-spanning-tree/tutorial/ : minimum spanning tree
 
 - https://www.geeksforgeeks.org/prims-minimum-spanning-tree-mst-greedy-algo-5/ : Minimum spanning tree 
 
+- https://www.youtube.com/watch?v=vNhvBrc02G4
+
 #### Prim's
 
 - first, select the minimum cost edge from the graph.
 - Then select the minimum cost edge from the graph, but it should be connected to the previous one.
+- Use min priority queue
+
+![Minimum spanning tree Prim's Lazy Algo](https://github.com/himkak/notes/blob/master/AlgoDS/graph/MinSpanningTree_PrimsLazyAlgo.JPG)
+
+- https://www.youtube.com/watch?v=jsmMtJpPnhU : Prim's Minimum Spanning Tree Algorithm | Graph Theory
+
+- step 1: Start from a node Iterate all the edges of the node and add them to min priority queue. Priority queue is of type T(start, end, cost). priority queue is sorted acc to cost (min-max). Mark the node as visited.
+- step 2: pull the first T from priority queue, check if both of its nodes are not visited, if visited skip it, else, add it to MST, and this will be next node to visit. Add all its edges to min priority queue, dont add any node which is already visited. Mark this node as visited.
+
+- as soon as we find no of edges = no of nodes -1, we have the MST
 
 ## Kruskal's
 
@@ -1127,6 +1202,12 @@ The cost of the spanning tree is the sum of the weights of all the edges in the 
 
 - https://www.youtube.com/watch?v=co4_ahEDCho : Huffman coding, to compress a string
 
+- https://www.youtube.com/watch?v=tKwnms5iRBU&t=690s : MIT Greedy Algorithms: Minimum Spanning Tree
+
+### Properties of greedy problem
+- Optimal substructure: If you can solve the subproblem optimally then you can solve the probelm also optimally
+- greedy choice property : locally optimal choices lead to globally optimal solution
+
 </details>
 
 <details>
@@ -1141,10 +1222,26 @@ The cost of the spanning tree is the sum of the weights of all the edges in the 
 - Coin Changing Problem  
 - Levenshtein Distance  
 
+### Definition
+ If you have solved a problem with the given input, then save the result for future reference, so as to avoid solving the same problem again.. shortly 'Remember your Past' :) .  If the given problem can be broken up in to smaller sub-problems and these smaller subproblems are in turn divided in to still-smaller ones, and in this process, if you observe some over-lapping subproblems, then its a big hint for DP. Also, the optimal solutions to the subproblems contribute to the optimal solution of the given problem ( referred to as the Optimal Substructure Property ).
+ 
+ 
+ Note that divide and conquer is slightly a different technique. In that, we divide the problem in to non-overlapping subproblems and solve them independently, like in mergesort and quick sort.
+ 
+ 
+ The intuition behind dynamic programming is that we trade space for time, i.e. to say that instead of calculating all the states taking a lot of time but no space, we take up space to store the results of all the sub-problems to save time later.
+
 - https://www.youtube.com/playlist?list=PLVrpF4r7WIhTT1hJqZmjP10nxsmrbRvlf  : playlist for basics
+- https://www.codechef.com/wiki/tutorial-dynamic-programming : code chef tutorial
+- https://www.hackerearth.com/practice/notes/dynamic-programming-i-1/ 
+- https://leetcode.com/discuss/general-discussion/458695/Dynamic-Programming-Patterns
+
+
+- https://en.wikipedia.org/wiki/Dynamic_programming
+- https://algorithmist.com/wiki/Longest_increasing_subsequence
 - https://www.topcoder.com/community/competitive-programming/tutorials/dynamic-programming-from-novice-to-advanced/
 - https://www.youtube.com/channel/UClnwNEngsXoIp_tgJ2jZWfw
-- https://leetcode.com/discuss/general-discussion/458695/dynamic-programming-patterns
+- https://leetcode.com/discuss/general-discussion/458695/dynamic-programming-patterns : famous leetcode page
 
 - https://leetcode.com/discuss/general-discussion/491522/Dynamic-Programming-Questions-Thread?fbclid=IwAR1jQGU1Ox3_omZ_n7wdYfVM1Z7E3XyQDmTlJ0YNNcVLZrlHFBevvxM0g2o : lsit of famous DP questions
 
@@ -1168,13 +1265,22 @@ The cost of the spanning tree is the sum of the weights of all the edges in the 
 
 - https://www.youtube.com/watch?v=CE2b_-XfVDk : longest increasing subsequence
 
+- https://leetcode.com/discuss/general-discussion/662866/Dynamic-Programming-for-Practice-Problems-Patterns-and-Sample-Solutions : Practise | DP questions sub topics wise
+
+
+### Types of DP problems
+1. Combinatorics : In these kind of problems we have to find the no of ways
 
 ### Steps to solve 
 1. Define the objective function
 2. Identify the base case
-3. Write the recurrence relation for the optimized objective function
+3. Write the recurrence relation for the optimized objective function. f(n)= ?
 4. what is the order of execution
-5. Where to look for thr answer
+5. Where to look for the answer
+
+
+
+![Dp Framework](https://github.com/himkak/notes/blob/master/AlgoDS/DP/DpFrameworkWithSampleSolution.JPG)
 
 #### Eg 1: Jump Game
 - https://leetcode.com/articles/jump-game/
@@ -1293,8 +1399,124 @@ For zero based array
 
 </details>
 
+<details>
+<summary> Union Find
+</summary>
+
+## Union Find
+
+- https://www.youtube.com/watch?v=ibjEGG7ylHk : Union Find Introduction
+
+- https://leetcode.com/discuss/general-discussion/655708/graph-for-beginners-problems-pattern-sample-solutions/562734 : questions to practise and template of code
+
+![Complexity](https://github.com/himkak/notes/blob/master/AlgoDS/unionFind/Complexity.JPG)
+
+- https://www.youtube.com/watch?v=0jNmHPfA_yE : Union Find - Union and Find Operations
+
+- https://www.youtube.com/watch?v=VHRhJWacxis : Union Find Path Compression
+
+- https://www.youtube.com/watch?v=KbFlZYCpONw : Union Find Code
+
+- https://www.youtube.com/watch?v=ID00PMy0-vE : Disjoint Sets using union by rank and path compression Graph Algorithm
+
+- https://www.youtube.com/watch?v=wU6udHRIkcc : 1.12 Disjoint Sets Data Structure - Weighted Union and Collapsing Find
+
+- https://leetcode.com/problems/friend-circles/discuss/101336/Java-solution-Union-Find : Union Find Template | Frields circle solution
+
+### Algo
+
+#### variables
+
+- parent[] : size is no of elems. In init set every elem parent as itself
+- rank[] : size is no of elems
+- count : no of elems
+
+#### Operations
+
+- initialize : takes input as no of elems. Initialize all the variables
+
+- union : It takes input as 2 values and creates a union of both.
+			Find the parent of p, find the parent of q
+			Check which set is smaller, by using rank
+			set parent[parentSmaller]= parentBigger
+			If both sets are of same rank, increase the rank of parrentBigger by 1
+			
+- find : find the parent of the node. In other words, find the root of the set it belongs to.
+			while node doesnt points to itslef, keep on moving up.
+			
+### Examples
+
+#### Friend circles 
+
+```
+public class Solution {
+    class UnionFind {
+        private int count = 0;
+        private int[] parent, rank;
+        
+        public UnionFind(int n) {
+            count = n;
+            parent = new int[n];
+            rank = new int[n];
+            for (int i = 0; i < n; i++) {
+                parent[i] = i;
+            }
+        }
+        
+        public int find(int p) {
+        	while (p != parent[p]) {
+                parent[p] = parent[parent[p]];    // path compression by halving
+                p = parent[p];
+            }
+            return p;
+        }
+        
+        public void union(int p, int q) {
+            int rootP = find(p);
+            int rootQ = find(q);
+            if (rootP == rootQ) return;
+            if (rank[rootQ] > rank[rootP]) {
+                parent[rootP] = rootQ;
+            }
+            else {
+                parent[rootQ] = rootP;
+                if (rank[rootP] == rank[rootQ]) {
+                    rank[rootP]++;
+                }
+            }
+            count--;
+        }
+        
+        public int count() {
+            return count;
+        }
+    }
+    
+    public int findCircleNum(int[][] M) {
+        int n = M.length;
+        UnionFind uf = new UnionFind(n);
+        for (int i = 0; i < n - 1; i++) {
+            for (int j = i + 1; j < n; j++) {
+                if (M[i][j] == 1) uf.union(i, j);
+            }
+        }
+        return uf.count();
+    }
+}
+
+```
+
+### Kruskal's minimum spanning tree
+
+- https://www.youtube.com/watch?v=JZBQLXgSGfs
+
+![Algo](https://github.com/himkak/notes/blob/master/AlgoDS/unionFind/KruskalsMinimumSpanningTree.JPG)
+
+### Least common ancestor in tree
 
 
+
+</details>
 
 <details>
 <summary> Miscellaneous
@@ -1436,6 +1658,10 @@ https://blog.scottlogic.com/2010/12/22/sorted_lists_in_java.html : sorted list i
 
 https://towardsdatascience.com/8-common-data-structures-every-programmer-must-know-171acf6a1a42 
 
+https://discuss.codechef.com/t/data-structures-and-algorithms/6599
+
+https://github.com/jwasham/coding-interview-university
+
 # Blog posts on advice and experiences
 
 ## Google interview
@@ -1464,7 +1690,7 @@ https://buildyourfuture.withgoogle.com/ :
 
 https://www.geeksforgeeks.org/must-do-coding-questions-for-companies-like-amazon-microsoft-adobe/
 
-
+- https://leetcode.com/discuss/interview-question/376375/
 
 ### Videos
 https://www.youtube.com/watch?v=XKu_SEDAykw
@@ -1491,12 +1717,11 @@ https://github.com/ryanoasis/dev-interview-study-guide
 
 - https://leetcode.com/contest/biweekly-contest-25/ : leet code biweekly contests
 
-### Interesting questions yet to solve
+- https://github.com/yoshrawat/leetcode_company_wise_questions : company wise list of questions from leetcode
 
-- https://leetcode.com/explore/challenge/card/30-day-leetcoding-challenge/530/week-3/3301/
+- https://www.geeksforgeeks.org/must-coding-questions-company-wise/ : company wise list of questions from geeksforgeeks
 
-- https://leetcode.com/contest/biweekly-contest-25/ : old contest link leetcode
-
+- https://github.com/jwasham/coding-interview-university
 
 </details>
 
@@ -1531,5 +1756,7 @@ https://github.com/ryanoasis/dev-interview-study-guide
 	
 - Range minimum queries in O(1) time
 	-- Sparse Table 
+	
+- If a problem can be broken into smaller sub problem
 
 </details>
