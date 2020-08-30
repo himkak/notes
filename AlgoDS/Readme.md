@@ -45,6 +45,9 @@
 
 </details>
 
+<details>
+<summary> Mathematics
+</summary>
 
 ## Bit Manipulation
 
@@ -64,6 +67,9 @@
 - https://www.geeksforgeeks.org/find-element-appears-array-every-element-appears-twice/?ref=rp : Find the element that appears once in an array where every other element appears twice
 		- xor of a number with itself is 0
 		- Do a xor of all the numbers in array and u will get the result
+		
+		
+</details>
 
 <details>
 <summary> Complexity Analysis
