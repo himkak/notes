@@ -232,6 +232,8 @@ One thing to keep in mind is that some levels of consistency are still achievabl
 
 http://ksat.me/a-plain-english-introduction-to-cap-theorem in layman terms by comparing with real world
 
+- https://codahale.com/you-cant-sacrifice-partition-tolerance/
+
 ### PACELC
 
 - https://pusher.com/sessions/meetup/the-realtime-guild/realtime-ish-shared-state-latency-vs-consistency 
@@ -404,6 +406,11 @@ A type of database transaction that has four important properties:
 #### Distributed Transactions
 
 
+#### 2 Phase Commit
+
+- https://codahale.com/you-cant-sacrifice-partition-tolerance/
+
+- https://stackoverflow.com/questions/7389382/two-phase-commit
 
 ### OLAP
 

@@ -843,6 +843,8 @@ All levels will be completely filled
 
 - https://www.youtube.com/watch?v=COZK7NATh4k : Binary search tree - Implementation in C/C++
 
+- https://www.youtube.com/watch?v=gcULXE7ViZw : Delete a node in BST
+
 
 ![BST Comparison with other DS](https://github.com/himkak/notes/blob/master/AlgoDS/BSTComparison.PNG)
 
@@ -1049,6 +1051,9 @@ Note : To find shortest path between 2 nodes use BFS
 
 #### BFS
 
+- used to find the shortest path
+- To create the path, same prev of every node and then from destination move to src.
+
 - runtime complexity : O(V+E)
 
 - https://youtu.be/ls4cHglfc0g : BFS
@@ -1059,11 +1064,21 @@ Note : To find shortest path between 2 nodes use BFS
 
 - https://www.youtube.com/watch?v=KiCBXu4P-2Y : Breadth First Search grid shortest path | Graph Theory
 
+
+
 #### DFS
 
 - https://youtu.be/fI6X6IBkzcw
 
 
+#### Graph Coloring
+
+**Bipartite Graph**
+- https://www.youtube.com/watch?v=mVmXwFkgoJ0
+- https://www.youtube.com/watch?v=0ACfAqs8mm0
+
+**Chromatic value**
+- Minimum number of colors requred to color graph, so that no 2 connected edges have same color.
 
 ### Topological Sort
 
@@ -1410,6 +1425,8 @@ For zero based array
 </summary>
 
 ## Union Find
+
+- Also known as disjoint set
 
 - https://www.youtube.com/watch?v=ibjEGG7ylHk : Union Find Introduction
 
