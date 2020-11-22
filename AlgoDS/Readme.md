@@ -1073,12 +1073,27 @@ Note : To find shortest path between 2 nodes use BFS
 
 #### Graph Coloring
 
+- https://www.youtube.com/watch?v=052VkKhIaQ4
+
 **Bipartite Graph**
+
 - https://www.youtube.com/watch?v=mVmXwFkgoJ0
 - https://www.youtube.com/watch?v=0ACfAqs8mm0
 
+- https://www.youtube.com/watch?v=GhjwOiJ4SqU
+- https://www.youtube.com/watch?v=LdOnanfc5TM
+
 **Chromatic value**
 - Minimum number of colors requred to color graph, so that no 2 connected edges have same color.
+
+### Check if Graph has cycle
+
+- https://www.youtube.com/watch?v=joqmqvHC_Bo
+
+- https://leetcode.com/problems/course-schedule/ : problem with solution
+
+#### Tarjan's Strongly connected components Algo
+- https://www.youtube.com/watch?v=wUgWX0nc4NY&t=384s
 
 ### Topological Sort
 
@@ -1088,7 +1103,9 @@ Eg : Suppose I have to do some courses, and every course has some prerequisites 
 
 - https://www.youtube.com/watch?v=eL-KzMXSXXI&list=PLDV1Zeh2NRsDGO4--qE8yH72HFL1Km93P&index=15 : Theory
 
-- https://leetcode.com/problems/course-schedule/ : problem with solution
+- https://leetcode.com/problems/course-schedule-ii/
+
+
 
 ### Shortest Path Algos:
 
@@ -1104,7 +1121,9 @@ https://www.hackerearth.com/practice/algorithms/graphs/shortest-path-algorithms/
 
 - https://www.youtube.com/watch?v=TXkDpqjDMHA&list=PLDV1Zeh2NRsDGO4--qE8yH72HFL1Km93P&index=16 : Shortest/Longest path on a Directed Acyclic Graph (DAG) | Graph Theory
 
-- In this algo, we first do topological sort and them pick the next node acc to topological sort.
+- https://www.youtube.com/watch?v=ePqBaDRHkdk&list=PLSVu1-lON6LyvJV6EwIJrcZi4ONJmQCQ5&index=4
+
+- In this algo, we first do topological sort and then pick the next node acc to topological sort.
 
 #### Dijkstra's Algorithm
 

@@ -352,6 +352,25 @@ The backing data structure is : HashMap for get, put and delete in O(1), backed 
 
 - https://www.youtube.com/watch?v=KWOSGVtHWqA : AWS re:Invent 2017: [REPEAT] Which Database to Use When? (DAT310-R)
 
+#### Which Database to use when
+- Points to be considered:
+	- shape
+		- row store : RDBMS
+		- column store : cassandra
+		- key-value store : redis
+		- Document store : Mongo
+		- Graph store
+		- Time series store
+		- unstructured store
+	- size
+		- Is the size of data bounded(if the size of data has limits) or unbounded(if the size of data has no limits)
+		- Is the data partitionable or monolithic 
+	- compute
+		- compute functions
+		- throughput, latency, change rate, rate of ingestion
+	- Do you need managed DB service or are you going to manage it by yourself
+	- is the data transactional
+	
 
 ### Polyglot persistence
 - Polyglot persistence is the concept of using different data storage technologies to handle different data storage needs within a given enterprise and even software application.
@@ -969,13 +988,7 @@ Level 3 - Hypermedia Controls
 
 #### AWS
 
-- https://app.pluralsight.com/paths/certificate/aws-certified-solutions-architect-associate
 
-- https://www.udemy.com/course/amazon-web-services-aws/learn/lecture/5813770#overview
-
-- https://www.udemy.com/course/aws-concepts/?LSNPUBID=JVFxdTr9V80&ranEAID=JVFxdTr9V80&ranMID=39197&ranSiteID=JVFxdTr9V80-AyFAtfbQsNYJ4TdCqktsLg
-
-- https://drive.google.com/drive/folders/10sNkyxwWbpKcQW8sydv1U9z-2-g4g6Af 
 
 ### Google System Design Interview Prep Refs
 
