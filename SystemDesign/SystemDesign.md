@@ -829,9 +829,17 @@ Level 3 - Hypermedia Controls
 
 #### Twitter
 
+- Difficulty level : medium
+
+- https://www.infoq.com/presentations/Twitter-Timeline-Scalability/ : Timeline 
+
+- https://www.youtube.com/watch?v=wYk0xPP_P_8
+- https://github.com/himkak/library/blob/master/system%20design/GrokkingTheSystemDesign_Educative_Designing%20Twitter.pdf
 - http://highscalability.com/scaling-twitter-making-twitter-10000-percent-faster
 
 - https://blog.twitter.com/engineering/en_us.html
+
+ 
 
 #### Instagram
 
@@ -979,7 +987,7 @@ Level 3 - Hypermedia Controls
 
 - How to reach the numbers for NFRs
 
-
+- https://www.notion.so/73e875fdfffd48f588d9e643afb16275?v=0c0dd4236ad3474daa9e905b025618a0 : Yogesh Notes
 
 #### GCP
 
