@@ -74,7 +74,9 @@
 			2) paralelly append the tweet to all the followers objects
 			3) update cache
 			
-https://github.com/himkak/notes/blob/master/SystemDesign/twitter%20timeline/TweetFlow.jpg
+
+
+![Tweet Flow](https://github.com/himkak/notes/blob/master/SystemDesign/twitter%20timeline/TweetFlow.jpg)
 	
 ### upload image/video
 		post
@@ -89,7 +91,9 @@ https://github.com/himkak/notes/blob/master/SystemDesign/twitter%20timeline/Twee
 	cache : timeline object : key : <userId>:tweets, value : list of tweets
 	
 		
-https://github.com/himkak/notes/blob/master/SystemDesign/twitter%20timeline/ShowHomeTimeline.jpg
+
+
+![HOme timeline Flow](https://github.com/himkak/notes/blob/master/SystemDesign/twitter%20timeline/ShowHomeTimeline.jpg)
 
 		
 ### Search
