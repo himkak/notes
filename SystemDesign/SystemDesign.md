@@ -442,6 +442,8 @@ Sharding based on a client's region
 Sharding based on the type of data (e.g: user data gets stored in one shard, payments data gets stored in another shard)
 Sharding based on the hash of a column (only for structured data)
 
+- http://www.25hoursaday.com/weblog/2009/01/16/BuildingScalableDatabasesProsAndConsOfVariousDatabaseShardingSchemes.aspx
+
 ### AWS S3
 
 </details>
