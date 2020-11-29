@@ -35,6 +35,10 @@
 	Video URL
 		per day : 200 B * 3E5 =  60E6 = 60 MB
 		5 yrs = 60 MB * 400 * 5 = 120 GB	
+		
+### Numbers as of 2011
+- 155M tweets / day
+- max : 7k tweets / sec
 
 ## Identify the high level components
 	- tools : 
@@ -70,7 +74,7 @@
 			2) paralelly append the tweet to all the followers objects
 			3) update cache
 			
-https://github.com/himkak/notes/blob/master/SystemDesign/twitter%2timeline/TweetFlow.jpg
+https://github.com/himkak/notes/blob/master/SystemDesign/twitter%20timeline/TweetFlow.jpg
 	
 ### upload image/video
 		post
@@ -85,8 +89,8 @@ https://github.com/himkak/notes/blob/master/SystemDesign/twitter%2timeline/Tweet
 	cache : timeline object : key : <userId>:tweets, value : list of tweets
 	
 		
+https://github.com/himkak/notes/blob/master/SystemDesign/twitter%20timeline/ShowHomeTimeline.jpg
 
-	- Define their domain
 		
 ### Search
 	Search write happens in O(1)
