@@ -829,16 +829,8 @@ Level 3 - Hypermedia Controls
 
 #### Twitter
 
-- Difficulty level : medium
 
-- https://www.infoq.com/presentations/Twitter-Timeline-Scalability/ : Timeline 
-
-- https://www.youtube.com/watch?v=wYk0xPP_P_8
-- https://github.com/himkak/library/blob/master/system%20design/GrokkingTheSystemDesign_Educative_Designing%20Twitter.pdf
-- http://highscalability.com/scaling-twitter-making-twitter-10000-percent-faster
-
-- https://blog.twitter.com/engineering/en_us.html
-
+https://github.com/himkak/notes/blob/master/SystemDesign/twitter%20timeline/Twitter.md
  
 
 #### Instagram

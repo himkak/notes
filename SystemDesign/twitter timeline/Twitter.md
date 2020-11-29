@@ -100,6 +100,11 @@ https://github.com/himkak/notes/blob/master/SystemDesign/twitter%20timeline/Show
 	- scaling
 	- eventual consistency
 
+
+
+
+***********************ROUGE / IN PROGRESS***********************************************
+
 2. **System interface definition** : Identify the APIs to be exposed		
 
 
