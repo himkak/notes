@@ -839,7 +839,13 @@ https://github.com/himkak/notes/blob/master/SystemDesign/twitter%20timeline/Twit
 
 - https://www.youtube.com/watch?v=da7mdMz0g0g : Instagram System Design | Design Photo-Sharing Application | System Design Interview
 - https://techtakshila.com/system-design-interview/chapter-1
+- https://www.youtube.com/watch?v=hnpzNAPiC0E
 
+
+- 400M users
+- 4+ B likes
+- 100M photos/videos upload
+- Top account: 110M followers
 
 ### Ticket booking system
 

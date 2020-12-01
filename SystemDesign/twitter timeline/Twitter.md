@@ -153,6 +153,7 @@
 ## References
 
 - https://www.infoq.com/presentations/Twitter-Timeline-Scalability/ : Timeline 
+- https://www.youtube.com/watch?v=J5auCY4ajK8 same content by another person
 
 - https://www.youtube.com/watch?v=wYk0xPP_P_8
 - https://github.com/himkak/library/blob/master/system%20design/GrokkingTheSystemDesign_Educative_Designing%20Twitter.pdf
