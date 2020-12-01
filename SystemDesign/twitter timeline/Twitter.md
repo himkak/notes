@@ -35,6 +35,17 @@
 	Video URL
 		per day : 200 B * 3E5 =  60E6 = 60 MB
 		5 yrs = 60 MB * 400 * 5 = 120 GB	
+	
+	-------------------
+	Redis
+		- write : 300E3 
+		- per tweet : 300 bytes
+		- tweetId : 40 B * 300E3 * 1000 = 12E9 B = 12 GB (per day)
+		- home time per user 12 GB per day : 12 GB * 
+		
+		home timeline : 300E6 * 800 (total tweets per user) * 40B (per tweet tweetId, userId) = 96E11 =~ 10 TB * 3(Nodes) = 30 TB
+		tweet, tweetId = 300E3 * 300 = 9E7 B per day = 9E7 * 400 = 36E9 B per yr = 36GB per yr * 3 = 102 GB per yr
+	
 		
 ### Numbers as of 2011
 - 155M tweets / day
