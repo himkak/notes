@@ -555,13 +555,37 @@ The act of fetching a resource or piece of data regularly at an interval to make
 
 - https://app.pluralsight.com/library/courses/web-security-owasp-top10-big-picture/table-of-contents : owasp top 10
 
+- https://restfulapi.net/security-essentials/
+
+- https://apifriends.com/api-security/api-security-best-practices/
+
+- https://medium.com/swlh/3-ways-to-secure-your-web-api-for-different-situations-8d5cd4762ab3#:~:text=OAuth,endpoint%20for%20the%20login%20process.
+
+- https://dzone.com/refcardz/oauth-patterns-and-anti-patterns?chapter=1
+
+
+
 #### JWT
-https://www.youtube.com/watch?v=soGRyl9ztjI   (Introduction: what is session token, issues with session token and session-id, what is jwt token oh high level and how it solves the issue)  
-https://www.youtube.com/watch?v=_XbXkVdoG_0    (JWT structure)   
+- https://dzone.com/articles/are-you-using-jwts-for-user-sessions-in-the-correc?fromrel=true
+
+- https://www.youtube.com/watch?v=soGRyl9ztjI   (Introduction: what is session token, issues with session token and session-id, what is jwt token oh high level and how it solves the issue)  
+- https://www.youtube.com/watch?v=_XbXkVdoG_0    (JWT structure)   
 
 #### OAUTH  
 Used to access a resource via service on behalf of the owner of the resource.  
 https://www.youtube.com/watch?v=3pZ3Nh8tgTE   
+
+- https://dzone.com/storage/assets/14464316-dzone-refcard-347-oauth-patterns-anti-patterns-202.pdf
+- https://dzone.com/articles/deep-dive-to-oauth20-amp-jwt-part-2-oauth20?fromrel=true : oauth2
+- https://dzone.com/articles/oauth-20-vs-session-management?fromrel=true : oauth2
+
+- https://oauth.net/videos/
+- https://developer.okta.com/
+- https://openid.net/
+- https://oauth.net/2/
+- https://www.udemy.com/course/oauth-2-simplified/?referralCode=B04F59AED67B8DA74FA7
+- https://oauth2simplified.com/
+- https://oauth.net/2/grant-types/implicit/
 
 
 ### HTTP
@@ -806,6 +830,8 @@ Level 3 - Hypermedia Controls
 
 - https://github.com/himkak/notes/blob/master/SystemDesign/netflix.md
 
+- https://www.geeksforgeeks.org/system-design-netflix-a-complete-architecture/
+
 #### youtube
 
 - http://blog.gainlo.co/index.php/2016/10/22/design-youtube-part/
@@ -936,6 +962,7 @@ https://github.com/himkak/notes/blob/master/SystemDesign/twitter%20timeline/Twit
 
 ## References:
 
+
 - https://drive.google.com/drive/folders/1OOM9DvWK3uWrlC-itxycbYroDS439Fhv : system design from algo-expert...
 - https://drive.google.com/drive/u/0/folders/1nDXkIzCQ1KQ2DnovRqSkMOTwmLzXA5iX : system design foundation...
 
@@ -975,6 +1002,10 @@ https://github.com/himkak/notes/blob/master/SystemDesign/twitter%20timeline/Twit
 
 ### TODO
 
+- https://medium.com/javarevisited/25-software-design-interview-questions-to-crack-any-programming-and-technical-interviews-4b8237942db0
+
+- https://www.udemy.com/course/preparing-for-system-design-interviews/?ranMID=39197&ranEAID=JVFxdTr9V80&ranSiteID=JVFxdTr9V80-tonMQGx01Um4VXRheXg41A&LSNPUBID=JVFxdTr9V80&utm_source=aff-campaign&utm_medium=udemyads
+
 - https://learning.oreilly.com/videos/software-architecture-fundamentals/9781491901144
 
 - https://www.coursera.org/specializations/software-design-architecture
@@ -994,6 +1025,13 @@ https://github.com/himkak/notes/blob/master/SystemDesign/twitter%20timeline/Twit
 - https://learning.oreilly.com/videos/gcp-complete-google/9781788999519
 - https://app.pluralsight.com/library/courses/google-cloud-platform-fundamentals/table-of-contents
 
+#### Azure
+
+- https://info.microsoft.com/ww-thankyou-azure-infra-introduction-to-iaas-on-demand-webinar.html?LCID=en-in&ocid=mkto_eml_em593935a1la1&ocid=eml_pg163405_gdc_comm_az
+
+- https://docs.microsoft.com/en-gb/learn/modules/intro-to-azure-fundamentals/
+
+- 
 #### AWS
 
 
@@ -1025,5 +1063,51 @@ https://github.com/himkak/notes/blob/master/SystemDesign/twitter%20timeline/Twit
 ### GCP course in coursera
 
 -  https://www.coursera.org/specializations/gcp-architecture?ranMID=40328&ranEAID=vedj0cWlu2Y&ranSiteID=vedj0cWlu2Y-8q8Xs1UPwqz6Z6XXL6MH1w&siteID=vedj0cWlu2Y-8q8Xs1UPwqz6Z6XXL6MH1w&utm_content=10&utm_medium=partners&utm_source=linkshare&utm_campaign=vedj0cWlu2Y
+
+
+### Events Microservices kafka confluent
+
+- https://event.on24.com/eventRegistration/console/EventConsoleApollo.jsp?simulive=y&eventid=2515222&sessionid=1&username=&partnerref=&format=fhaudio&mobile=&flashsupportedmobiledevice=&helpcenter=&key=AC93D048AB08844F9A1CC4CD4CC7595C&newConsole=true&nxChe=true&newTabCon=true&text_language_id=en&playerwidth=748&playerheight=526&eventuserid=416809601&contenttype=A&mediametricsessionid=359075447&mediametricid=3542501&usercd=416809601&mode=launch
+
+- https://event.on24.com/eventRegistration/console/EventConsoleApollo.jsp?simulive=y&eventid=2515400&sessionid=1&username=&partnerref=&format=fhaudio&mobile=&flashsupportedmobiledevice=&helpcenter=&key=C8239323D1AA9F2176B42FB2A7C0BA00&newConsole=true&nxChe=true&newTabCon=true&text_language_id=en&playerwidth=748&playerheight=526&eventuserid=416809608&contenttype=A&mediametricsessionid=359075810&mediametricid=3542756&usercd=416809608&mode=launch
+
+- https://event.on24.com/eventRegistration/console/EventConsoleApollo.jsp?simulive=y&eventid=2515418&sessionid=1&username=&partnerref=&format=fhaudio&mobile=&flashsupportedmobiledevice=&helpcenter=&key=F9BFB60CA2B02E9F9A8B4037A2FA0445&newConsole=true&nxChe=true&newTabCon=true&text_language_id=en&playerwidth=748&playerheight=526&eventuserid=416809612&contenttype=A&mediametricsessionid=359075945&mediametricid=3542780&usercd=416809612&mode=launch
+
+# Generic Requirements
+
+## Comparison of databases, which to use when
+
+## Event Streaming
+
+## CQRS
+
+## Upload file/photos/videos
+
+### Dropbox
+
+### Google Drive
+
+## Manage Post with comments & likes as Insta/ FB/ twitter has
+
+## Login functionality authentication & authrization
+
+## ecommerce 
+
+## ticket booking like book my show
+
+## Distributed Counter
+
+## Rate limiter
+
+## Web Crawler
+
+## Video Streaming Netflix/youtube/tiktok
+
+## Notification
+
+## Chat app
+
+## Distributed cache
+
 
 </details>

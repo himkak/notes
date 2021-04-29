@@ -219,6 +219,7 @@ TO transform the data.
 
 ## usage
 Create a java maven project
+
 add the kafka streams dependency
 set the stream configuartion
 
@@ -240,6 +241,7 @@ Avro is a row-oriented remote procedure call and data serialization framework de
 
 # References
 
+- https://www.youtube.com/playlist?list=PLa7VYi0yPIH0KbnJQcMv5N9iW8HkZHztH : overview of kafka (good)
 - Kafka getting started: https://kafka.apache.org/documentation.html#gettingStarted
 - Kafka tutorial oreilly : https://learning.oreilly.com/videos/apache-kafka-series/9781789342604
 - Kafka tutorial pluralsight: https://app.pluralsight.com/library/courses/apache-kafka-getting-started
@@ -248,3 +250,7 @@ Avro is a row-oriented remote procedure call and data serialization framework de
 - https://medium.com/javarevisited/top-10-apache-kafka-online-training-courses-and-certifications-621f3c13b38c : Top 10 Apache Kafka Online Training Courses and Certifications
 
 - https://kafka.apache.org/11/documentation/streams/architecture : KAFKA STREAMS Architecture
+
+- https://www.confluent.io/blog/apache-kafka-intro-how-kafka-works/
+
+- https://www.youtube.com/playlist?list=PLa7VYi0yPIH0KbnJQcMv5N9iW8HkZHztH : Kafka tutorial for beginners, by Confluent

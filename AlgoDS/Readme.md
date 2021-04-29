@@ -186,13 +186,22 @@
 ## Two Pointer 
 
 - https://www.interviewbit.com/tutorial/two-pointers/
+- file:///C:/Users/hmnsh/Documents/study/library/AlgoDs/EDUCAT~1.IO-/EDUCAT~1.IO-/33C29~1.PAT/158EC~1.INT/INTROD~1.HTM : Educative Grokking the coding
+- https://leetcode.com/problems/squares-of-a-sorted-array/ : Squares of a Sorted Array (easy)
+- file:///C:/Users/hmnsh/Documents/study/library/AlgoDs/EDUCAT~1.IO-/EDUCAT~1.IO-/33C29~1.PAT/551C4~1.TRI/11TRIP~1.HTM : Triplet Sum to Zero
+- file:///C:/Users/hmnsh/Documents/study/library/AlgoDs/EDUCAT~1.IO-/EDUCAT~1.IO-/3.%20Pattern%20Two%20Pointers/9.%20Dutch%20National%20Flag%20Problem%20(medium)/1.1%20Dutch%20National%20Flag%20Problem%20(medium)%20-.html : Sort Colors / Sort array with 3 types of numbers in place in 1 iteration : [2,0,2,1,1,0] -> [0,0,1,1,2,2]
+- file:///C:/Users/hmnsh/Documents/study/library/AlgoDs/EDUCAT~1.IO-/EDUCAT~1.IO-/3.%20Pattern%20Two%20Pointers/13.%20Solution%20Review%20Problem%20Challenge%202/1.1%20Solution%20Review_%20Problem%20Challenge%202%20-.html : Comparing Strings containing Backspaces
+
+- file:///C:/Users/hmnsh/Documents/study/library/AlgoDs/EDUCAT~1.IO-/EDUCAT~1.IO-/3.%20Pattern%20Two%20Pointers/15.%20Solution%20Review%20Problem%20Challenge%203/1.1%20Solution%20Review_%20Problem%20Challenge%203.html : Minimum Window Sort
+
+- 
 
 Two Pointers is a pattern where two pointers iterate through the data structure in tandem until one or both of the pointers hit a certain condition.
 Two Pointers is often useful when searching pairs in a sorted array or linked list; for example, when you have to compare each element of 
 an array to its other elements.
 
 
-Two pointers are needed because with just pointer, you would have to continually loop back through the array to find the answer. 
+Two pointers are needed because with just 1 pointer, you would have to continually loop back through the array to find the answer. 
 This back and forth with a single iterator is inefficient for time and space complexity — a concept referred to as asymptotic analysis. 
 While the brute force or naive solution with 1 pointer would work, it will produce something along the lines of O(n²). 
 In many cases, two pointers can help you find a solution with better space or runtime complexity.
@@ -247,6 +256,13 @@ An example of when to use the Fast and Slow pattern is when you’re trying to d
 ## Sliding Window
 
 Eg : https://www.geeksforgeeks.org/find-zeroes-to-be-flipped-so-that-number-of-consecutive-1s-is-maximized/
+
+- file:///C:/Users/hmnsh/Documents/study/library/AlgoDs/EDUCAT~1.IO-/EDUCAT~1.IO-/2.%20Pattern%20Sliding%20Window/1.%20Introduction/1.1%20Introduction%20-%20Grokking%20the%20Coding%20Interview_%20Patterns%20for%20Coding%20Questions.html : Intro , Grokking the coding interview
+
+- file:///C:/Users/hmnsh/Documents/study/library/AlgoDs/EDUCAT~1.IO-/EDUCAT~1.IO-/25393~1.PAT/2FBBA~1.MAX/11MAXI~1.HTM : Maximum Sum Subarray of Size K (easy)
+- file:///C:/Users/hmnsh/Documents/study/library/AlgoDs/EDUCAT~1.IO-/EDUCAT~1.IO-/25393~1.PAT/4633A~1.LON/11LONG~1.HTM : Longest Substring with K Distinct Characters (medium)
+- file:///C:/Users/hmnsh/Documents/study/library/AlgoDs/EDUCAT~1.IO-/EDUCAT~1.IO-/25393~1.PAT/6C072~1.NO-/11NO-R~1.HTM : No-repeat Substring (hard)
+- https://leetcode.com/problems/max-consecutive-ones-iii/ : Max Consecutive Ones
 	
 The Sliding Window pattern is used to perform a required operation on a specific window size of a given array or linked list, 
 such as finding the longest subarray containing all 1s. Sliding Windows start from the 1st element and keep shifting right by one 
@@ -269,6 +285,38 @@ constant and in other cases the sizes grows or shrinks.
 - No-repeat Substring (hard)
 - Longest Substring with Same Letters after Replacement (hard)
 - Longest Subarray with Ones after Replacement (hard)
+
+**Sample Template**
+
+- https://leetcode.com/problems/max-consecutive-ones-iii/
+
+```
+public int longestOnes(int[] A, int K) {
+		int windowStart = 0;
+		int maxLen = 0;
+		int windowEnd = 0;
+		int noOfZeros = 0;
+		for (int i = 0; i < A.length; i++) {
+
+			if (A[i] == 1) {
+				windowEnd = i;
+			} else {
+
+				while (noOfZeros == K) {
+					if (A[windowStart] == 0)
+						noOfZeros--;
+					windowStart++;
+				}
+
+				noOfZeros++;
+				windowEnd = i;
+			}
+			maxLen = Math.max(maxLen, windowEnd - windowStart + 1);
+		}
+		return maxLen;
+	}
+
+```
 	
 </details>
 
@@ -278,6 +326,14 @@ constant and in other cases the sizes grows or shrinks.
 </summary>
 	
 ## Merge Intervals
+
+- file:///C:/Users/hmnsh/Documents/study/library/AlgoDs/EDUCAT~1.IO-/EDUCAT~1.IO-/5.%20Pattern%20Merge%20Intervals/4.%20Intervals%20Intersection%20(medium)/1.1Intervals%20Intersection%20(medium)%20-%20Grokking%20the%20Coding%20Interview_%20Patterns%20for%20Coding%20Questions.html : Intervals Intersection
+
+- file:///C:/Users/hmnsh/Documents/study/library/AlgoDs/EDUCAT~1.IO-/EDUCAT~1.IO-/5.%20Pattern%20Merge%20Intervals/7.%20Solution%20Review%20Problem%20Challenge%201/1.1Solution%20Review_%20Problem%20Challenge%201%20-.html : Minimum Meeting Rooms required
+
+- file:///C:/Users/hmnsh/Documents/study/library/AlgoDs/EDUCAT~1.IO-/EDUCAT~1.IO-/5.%20Pattern%20Merge%20Intervals/9.%20Solution%20Review%20Problem%20Challenge%202/1.1Solution%20Review_%20Problem%20Challenge%202%20-.html : Maximum CPU Load (hard)
+
+- file:///C:/Users/hmnsh/Documents/study/library/AlgoDs/EDUCAT~1.IO-/EDUCAT~1.IO-/5.%20Pattern%20Merge%20Intervals/11.%20Solution%20Review%20Problem%20Challenge%203/1.1.1Solution%20Review_%20Problem%20Challenge%203%20-.html : Employee Free Time (hard)
 
 The Merge Intervals pattern is an efficient technique to deal with overlapping intervals. In a lot of problems involving intervals, 
 you either need to find overlapping intervals or merge intervals if they overlap. The pattern works like this:
@@ -289,9 +345,7 @@ optimizing interval merges.
 If you’re asked to produce a list with only mutually exclusive intervals
 If you hear the term “overlapping intervals”.
 
-**Merge interval problem patterns:**
-- Intervals Intersection (medium)
-- Maximum CPU Load (hard)
+
 
 </details>
 
@@ -300,6 +354,18 @@ If you hear the term “overlapping intervals”.
 </summary>
 
 ## Cyclic sort
+
+- file:///C:/Users/hmnsh/Documents/study/library/AlgoDs/EDUCAT~1.IO-/EDUCAT~1.IO-/6.%20Pattern%20Cyclic%20Sort/1.%20Introduction/Introduction%20-%20Grokking%20the%20Coding%20Interview_%20Patterns%20for%20Coding%20Questions.html : Introduction
+
+- file:///C:/Users/hmnsh/Documents/study/library/AlgoDs/EDUCAT~1.IO-/EDUCAT~1.IO-/6.%20Pattern%20Cyclic%20Sort/2.%20Cyclic%20Sort%20(easy)/1.1%20Cyclic%20Sort%20(easy)%20-%20Grokking%20the%20Coding%20Interview_%20Patterns%20for%20Coding%20Questions.html : Cyclic Sort (easy)
+
+- file:///C:/Users/hmnsh/Documents/study/library/AlgoDs/EDUCAT~1.IO-/EDUCAT~1.IO-/6.%20Pattern%20Cyclic%20Sort/4.%20Find%20all%20Missing%20Numbers%20(easy)/1.1Find%20all%20Missing%20Numbers%20(easy)%20-%20Grokking%20the%20Coding%20Interview_%20Patterns%20for%20Coding%20Questions.html : Find all Missing Numbers (easy)
+
+- Find the Missing Number : https://leetcode.com/problems/missing-number/
+
+- https://www.youtube.com/watch?v=-lfHWWMmXXM : Missing Smallest Positive Number
+
+- Find the Duplicate Number (easy) : Input: [1, 4, 4, 3, 2]; Output: 4
 
 This pattern describes an interesting approach to deal with problems involving arrays containing numbers in a given range. 
 The Cyclic Sort pattern iterates over the array one number at a time, and if the current number you are iterating is not at the 
@@ -322,6 +388,10 @@ If the problem asks you to find the missing/duplicate/smallest number in an sort
 </summary>
 
 ## In-place reversal of linked list
+
+- file:///C:/Users/hmnsh/Documents/study/library/AlgoDs/EDUCAT~1.IO-/EDUCAT~1.IO-/7.%20Pattern%20In-place%20Reversal%20of%20a%20LinkedList/2.%20Reverse%20a%20LinkedList%20(easy)/1.1Reverse%20a%20LinkedList%20(easy)%20-%20Grokking%20the%20Coding%20Interview_%20Patterns%20for%20Coding%20Questions.html : Reverse a LinkedList (easy)
+
+- file:///C:/Users/hmnsh/Documents/study/library/AlgoDs/EDUCAT~1.IO-/EDUCAT~1.IO-/7.%20Pattern%20In-place%20Reversal%20of%20a%20LinkedList/4.%20Reverse%20every%20K-element%20Sub-list%20(medium)/1.1%20Reverse%20every%20K-element%20Sub-list%20(medium)%20-.html : Reverse every K-element Sub-list (medium)
 
 In a lot of problems, you may be asked to reverse the links between a set of nodes of a linked list. Often, 
 the constraint is that you need to do this in-place, i.e., using the existing node objects and without using extra memory. 
@@ -537,6 +607,8 @@ https://byte-by-byte.wistia.com/medias/cwwyk06xhk?wvideo=cwwyk06xhk
 
 ### Backtracking theory
 
+- https://unacademy.com/a/free-course-on-backtracking
+
 https://www.interviewbit.com/courses/programming/topics/backtracking/
 
 https://www.interviewbit.com/tutorial/backtracking/
@@ -594,6 +666,8 @@ https://www.hackerearth.com/practice/data-structures/hash-tables/basics-of-hash-
 </summary>
 
 ## Arrays
+
+- https://www.geeksforgeeks.org/longest-sub-array-sum-k/
 
 - Binary Search
 - Find Maximum in Sliding Window
@@ -716,7 +790,7 @@ https://www.youtube.com/watch?v=QZOLb0xHB_Q : Check for balanced parentheses usi
 - https://www.ideserve.co.in/learn/next-great-element-in-an-array
 
 - If we have to find smaller to right, we traverse left to right.  
-Since we have to find smaller so again we have to create monotonic increasing stack.
+Since we have to find smaller so we have to create monotonic increasing stack (smaller to bigger).
 
 ```
 public int[] findSmallerToRight(int[] input){
@@ -749,10 +823,10 @@ Since we have to find larger, so we create monotonic decreasing stack.
 
 
 - **Summary** : move towards the direction in which we have to find the next elem.  
-Make opposite monotonic stack of what u have to find. If we have to find smaller, create increasing stack, if e have to find bigger, the we create decreasin stack.
+Make opposite monotonic stack of what u have to find. If we have to find smaller, create increasing stack, if we have to find bigger, then we create decreasin stack.
 
 
-
+Eg : https://leetcode.com/explore/learn/card/queue-stack/230/usage-stack/1363/ : Daily Temperatures
 
 ### Queue
 
@@ -769,6 +843,13 @@ Make opposite monotonic stack of what u have to find. If we have to find smaller
 - BFS : https://leetcode.com/explore/learn/card/queue-stack/231/practical-application-queue/1376/
 - BFS Template : https://leetcode.com/explore/learn/card/queue-stack/231/practical-application-queue/1372/
 - https://leetcode.com/explore/learn/card/queue-stack/231/practical-application-queue/1371/ : uses queue and BFS
+- https://leetcode.com/problems/word-ladder/ 
+
+- https://unacademy.com/a/free-course-on-stack-and-queues : stacks and queues : unacademy
+
+#### Queues & Stacks most frequently asked questions
+- https://leetcode.com/explore/learn/card/queue-stack/239/conclusion/1386/ : Implement Queue using Stacks
+- 
 
 </details>
 
@@ -874,6 +955,13 @@ All levels will be completely filled
 
 - https://www.youtube.com/watch?v=86g8jAQug04
 
+- file:///C:/Users/hmnsh/Documents/study/library/AlgoDs/EDUCAT~1.IO-/EDUCAT~1.IO-/8.%20Pattern%20Tree%20Breadth%20First%20Search/6.%20Minimum%20Depth%20of%20a%20Binary%20Tree%20(easy)/1.1Minimum%20Depth%20of%20a%20Binary%20Tree%20(easy)%20-.html : Minimum Depth of a Binary Tree (easy)
+
+- file:///C:/Users/hmnsh/Documents/study/library/AlgoDs/EDUCAT~1.IO-/EDUCAT~1.IO-/8.%20Pattern%20Tree%20Breadth%20First%20Search/8.%20Connect%20Level%20Order%20Siblings%20(medium)/1.1Connect%20Level%20Order%20Siblings%20(medium)%20-.html : Connect Level Order Siblings (medium)
+
+- file:///C:/Users/hmnsh/Documents/study/library/AlgoDs/EDUCAT~1.IO-/EDUCAT~1.IO-/8.%20Pattern%20Tree%20Breadth%20First%20Search/12.%20Solution%20Review%20Problem%20Challenge%202/1.1Solution%20Review_%20Problem%20Challenge%202%20-.html : Right View of a Binary Tree (easy) 
+
+
 This pattern is based on the Breadth First Search (BFS) technique to traverse a tree and uses a queue to keep track of 
 all the nodes of a level before jumping onto the next level. Any problem involving the traversal of a tree in a level-by-level 
 order can be efficiently solved using this approach.
@@ -895,6 +983,8 @@ If you’re asked to traverse a tree in a level-by-level fashion (or level order
 - https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/
 
 - https://www.hackerearth.com/practice/algorithms/graphs/depth-first-search/tutorial/
+
+- file:///C:/Users/hmnsh/Documents/study/library/AlgoDs/EDUCAT~1.IO-/EDUCAT~1.IO-/9.%20Pattern%20Tree%20Depth%20First%20Search/2.%20Binary%20Tree%20Path%20Sum%20(easy)/1.1Binary%20Tree%20Path%20Sum%20(easy)%20-%20Grokking%20the%20Coding%20Interview_%20Patterns%20for%20Coding%20Questions.html : Binary Tree Path Sum (easy)
 
 - Check if Two Binary Trees are Identical  
 - Write an In-Order Iterator for a Binary Tree  
@@ -1002,7 +1092,7 @@ In a post-order traversal, the root is always the last node visited.
 ### References
 
 - https://www.youtube.com/playlist?list=PLq9MXGH7Fkt9bh69QxtMXPbdfL57qPbYq : My Graph playlist, with all liked videos in learning order
-
+- https://leetcode.com/discuss/general-discussion/969327/Graph-Algorithms-One-Place-or-Dijkstra-or-Bellman-Ford-or-Floyd-Warshall-or-Prims-or-Kruskals-or-DSU 
 - https://www.hackerearth.com/practice/algorithms/graphs/graph-representation/tutorial/
 
 - https://www.interviewbit.com/courses/programming/topics/graph-data-structure-algorithms/
@@ -1111,7 +1201,7 @@ Eg : Suppose I have to do some courses, and every course has some prerequisites 
 
 https://www.hackerearth.com/practice/algorithms/graphs/shortest-path-algorithms/tutorial/
 
-- start by setting all the distances between source and all the nodes as infinity, except from source to source which will be 0
+
 
 #### Shortest path in a grid
 
@@ -1123,7 +1213,8 @@ https://www.hackerearth.com/practice/algorithms/graphs/shortest-path-algorithms/
 
 - https://www.youtube.com/watch?v=ePqBaDRHkdk&list=PLSVu1-lON6LyvJV6EwIJrcZi4ONJmQCQ5&index=4
 
-- In this algo, we first do topological sort and then pick the next node acc to topological sort.
+- start by setting all the distances between source and all the nodes as infinity, except from source to source which will be 0
+- In this algo, we first do topological sort and then pick the next node acc to topological sort, and update the distance if value is less than existing.
 
 #### Dijkstra's Algorithm
 
@@ -1240,6 +1331,8 @@ The cost of the spanning tree is the sum of the weights of all the edges in the 
 
 - https://www.interviewbit.com/tutorial/greedy-algorithm-introduction/
 
+- https://www.youtube.com/watch?v=ARvQcqJ_-NY
+
 - https://www.youtube.com/watch?v=co4_ahEDCho : Huffman coding, to compress a string
 
 - https://www.youtube.com/watch?v=tKwnms5iRBU&t=690s : MIT Greedy Algorithms: Minimum Spanning Tree
@@ -1283,7 +1376,7 @@ The cost of the spanning tree is the sum of the weights of all the edges in the 
 - https://www.youtube.com/channel/UClnwNEngsXoIp_tgJ2jZWfw
 - https://leetcode.com/discuss/general-discussion/458695/dynamic-programming-patterns : famous leetcode page
 
-- https://leetcode.com/discuss/general-discussion/491522/Dynamic-Programming-Questions-Thread?fbclid=IwAR1jQGU1Ox3_omZ_n7wdYfVM1Z7E3XyQDmTlJ0YNNcVLZrlHFBevvxM0g2o : lsit of famous DP questions
+- https://leetcode.com/discuss/general-discussion/491522/Dynamic-Programming-Questions-Thread?fbclid=IwAR1jQGU1Ox3_omZ_n7wdYfVM1Z7E3XyQDmTlJ0YNNcVLZrlHFBevvxM0g2o : list of famous DP questions
 
 - https://coursehunters.online/t/the-interview-cake-course-6-dynamic-programming-and-recursion/3183
 
@@ -1309,7 +1402,10 @@ The cost of the spanning tree is the sum of the weights of all the edges in the 
 
 
 ### Types of DP problems
-1. Combinatorics : In these kind of problems we have to find the no of ways
+1. Combinatorics : In these kind of problems we have to find the no of ways. 
+	- Eg : No of way to climb n stairs when you can take 1 to k steps at a time.
+2. Optimization : IN this kind of problem we have to find the min / max / best / worst.
+	- Eg : Find the minumum price to reach the top of the stairs
 
 ### Steps to solve 
 1. Define the objective function
@@ -1668,6 +1764,8 @@ https://www.khanacademy.org/computing/computer-science/algorithms
 
 https://www.quora.com/q/dailycodingproblems?ch=3&share=b1a4c8fc&srid=DaXA
 
+https://450dsa.com/
+
 
 # Video Tutorials
 - https://www.coursera.org/specializations/algorithms ( 4 courses series from stanford) (must watch) (to access free : https://www.classcentral.com/report/coursera-signup-for-free/) 
@@ -1747,6 +1845,8 @@ https://github.com/ryanoasis/dev-interview-study-guide
 
 ## TODO
 
+- https://leetcode.com/discuss/general-discussion/460599/blind-75-leetcode-questions
+
 - https://practice.geeksforgeeks.org/courses/must-do-interview-prep?vb=144
 
 - https://www.youtube.com/watch?v=qg0CY00qJqI&list=PLi9RQVmJD2fapKJ4DnZzAn55NJfo5IM1c
@@ -1765,6 +1865,9 @@ https://github.com/ryanoasis/dev-interview-study-guide
 
 - https://github.com/jwasham/coding-interview-university
 
+- https://leetcode.com/discuss/interview-experience/904804/salesforce-mts-hyderabad-oct-2020-offer : salesforce
+- https://leetcode.com/discuss/interview-experience/546186/salesforce-hackerrank-challenge-hyderabad-21-march-2020-result-awaited : salesforce
+
 </details>
 
 
@@ -1778,7 +1881,7 @@ https://github.com/ryanoasis/dev-interview-study-guide
 	-- If u need to find 1 element in a range
 		--- Binary Search
 	-- If u need to find a set of elements that fulfill certain constraints
-		--- Binary search / Tow pointer
+		--- Binary search / Two pointer
 
 
 - you want to search something
@@ -1802,3 +1905,140 @@ https://github.com/ryanoasis/dev-interview-study-guide
 - If a problem can be broken into smaller sub problem
 
 </details>
+
+## Grokking the Coding Interview questions
+
+https://leetcode.com/discuss/general-discussion/1063128/Grokking-the-Coding-Interview-Questions
+
+# Sliding Window
+keywords to identify this pattern : contiguous subarray / continuous subarray
+
+## Type 1
+moving of window depends on the size of window.
+Implementation : windowStart, windowEnd
+
+[https://leetcode.com/problems/maximum-average-subarray-i/] Maximum Average Subarray I
+[https://leetcode.com/problems/minimum-size-subarray-sum/] Minimum Size Subarray Sum [Medium]
+
+Template : Eg Maximum Average Subarray I
+```
+	public double findMaxAverage(int[] nums, int k) {
+        int ws=0;
+        int sum=0;
+        int maxSum=Integer.MIN_VALUE;
+        for(int we=0;we<nums.length;we++){
+            sum+=nums[we];
+            if(we>=k-1){
+                //calculate max
+                maxSum=Math.max(maxSum, sum);
+                //shrink window
+                sum-=nums[ws];
+                ws++;
+            }
+        }
+        return (double)maxSum/k;
+    }
+```
+
+## Type 2
+Dynamic moving of window but map not reqd
+
+[https://leetcode.com/problems/max-consecutive-ones-iii/] Max Consecutive Ones III [Medium]
+
+
+## Type 3
+Implementation : ws, we, map(either with freq or last occurence)
+
+[https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters] Longest Substring with K Distinct Characters [Subscribe to unlock] -> Similar Problems -> [https://leetcode.com/problems/longest-repeating-character-replacement/] (Type 3) , [https://leetcode.com/problems/max-consecutive-ones-iii/]
+[https://leetcode.com/problems/fruit-into-baskets/] Fruit Into Baskets [Medium]
+[https://leetcode.com/problems/longest-substring-without-repeating-characters/] Longest Substring Without Repeating Characters [Medium]
+
+## Type 4 
+Implementation : ws, we, map(either with freq or last occurence), a counter. If a pattern is provided create a charFreqMap from that pattern.
+Iterate the main string and keep on reducing the freq on char match. To reduce the window, we have logic on counter and the main map. 
+
+
+[https://leetcode.com/problems/permutation-in-string/] Permutation in String [Medium]
+[https://leetcode.com/problems/find-all-anagrams-in-a-string/] Find All Anagrams in a String [Medium]
+[https://leetcode.com/problems/minimum-window-substring/] Minimum Window Substring [Hard]
+[https://leetcode.com/problems/substring-with-concatenation-of-all-words/] Substring with Concatenation of All Words [Hard]
+
+
+
+# Two Pointers
+keywords to identify : sorted array
+
+[https://leetcode.com/problems/two-sum/] Two Sum [Easy]
+
+[https://leetcode.com/problems/remove-duplicates-from-sorted-array/] Remove Duplicates from Sorted Array [Easy] -> similar [https://leetcode.com/problems/remove-element/] Remove Element [Easy] -> similar [https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/submissions/] Remove Duplicates from Sorted Array II [Medium]
+
+[https://leetcode.com/problems/squares-of-a-sorted-array/] Squares of a Sorted Array [Easy]
+## using binary search
+[https://leetcode.com/problems/3sum/] Triplet sum to zero [Medium]
+[https://leetcode.com/problems/3sum-closest/] Triplet sum close to target [Medium]
+[https://leetcode.com/problems/sort-colors/] Sort colors [Medium]
+[https://leetcode.com/problems/4sum/] 4 sum [Medium]
+
+[https://leetcode.com/problems/backspace-string-compare/] Backspace String Compare [Easy]
+[https://leetcode.com/problems/shortest-unsorted-continuous-subarray/] Shortest Unsorted Continuous Subarray [Medium]
+
+
+# Fast & Slow Pointer
+[https://leetcode.com/problems/linked-list-cycle/] Linked List Cycle
+[https://leetcode.com/problems/middle-of-the-linked-list/] Middle of the Linked List
+[https://leetcode.com/problems/happy-number/] happy number
+[https://leetcode.com/problems/linked-list-cycle-ii/] In circular linkedlist find the starting node of the cycle
+[https://leetcode.com/problems/palindrome-linked-list/] Palindrome Linked List
+[https://leetcode.com/problems/reorder-list/] reorder list
+
+# Merge Intervals
+[https://leetcode.com/problems/merge-intervals/] Merge Intervals
+[https://leetcode.com/problems/insert-interval/] Insert interval
+[https://leetcode.com/problems/interval-list-intersections/] Interval List Intersections
+[https://leetcode.com/problems/my-calendar-i/] My calendar / conflict assignment
+[https://www.lintcode.com/problem/meeting-rooms-ii/] Meeting rooms
+
+# Cyclic Sort
+[https://leetcode.com/problems/missing-number/] find missing number
+[https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array] find all missing numbers
+[https://leetcode.com/problems/find-the-duplicate-number/] Find the duplicate number
+[https://leetcode.com/problems/find-all-duplicates-in-an-array/] Find all the duplicate numbers
+[https://leetcode.com/problems/first-missing-positive/] Find missing positive number
+
+# In place reversal of linkedlist
+[https://leetcode.com/problems/reverse-linked-list/] Reverse a Linkedlist
+[https://leetcode.com/problems/reverse-linked-list-ii/] Reverse a sub list
+*[https://leetcode.com/problems/reverse-nodes-in-k-group/] Reverse every K-element Sub-list
+*[https://leetcode.com/problems/rotate-list/] Rotate the list to the right by k places.
+
+# BFS
+[https://leetcode.com/problems/binary-tree-level-order-traversal/] Binary Tree Level Order Traversal [Medium]
+[https://leetcode.com/problems/binary-tree-level-order-traversal-ii/] Reverse level order traversal [Medium]
+[https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/] zigzag level order traversal [Medium]
+[https://leetcode.com/problems/average-of-levels-in-binary-tree/] Average of Levels in Binary Tree [Easy]
+[https://leetcode.com/problems/minimum-depth-of-binary-tree/] Minimum Depth of Binary Tree [Easy]
+[https://www.geeksforgeeks.org/level-order-successor-of-a-node-in-binary-tree/] Level Order Successor of a node in Binary Tree
+[https://leetcode.com/problems/populating-next-right-pointers-in-each-node/] Populating Next Right Pointers in Each Node
+Given a binary tree, connect each node with its level order successor.
+[https://leetcode.com/problems/binary-tree-right-side-view/] Binary Tree Right Side View [Medium]
+
+
+
+# DFS
+[https://leetcode.com/problems/path-sum/] (Binary Tree Path Sum) (easy)
+[https://leetcode.com/problems/diameter-of-binary-tree/] (Diameter of Binary Tree) (easy)
+[https://leetcode.com/problems/path-sum-ii/] (Paths with sum equal to target) (Medium)
+[https://leetcode.com/problems/sum-root-to-leaf-numbers/] (Sum Root to Leaf Numbers) (Medium)
+[https://www.geeksforgeeks.org/check-root-leaf-path-given-sequence/] (Path With Given Sequence) (Medium)
+[https://leetcode.com/problems/binary-tree-maximum-path-sum/] (Path with Maximum Sum) (hard)
+
+
+# SubSets
+[https://leetcode.com/problems/subsets/] (Distinct Subsets) (Medium)
+[https://leetcode.com/problems/subsets-ii/] (Subsets with duplicates)
+[https://leetcode.com/problems/permutations/] (Peermutations)
+[https://leetcode.com/problems/letter-case-permutation/] String case permutation
+[https://leetcode.com/problems/generate-parentheses/] Generate parenthesis
+
+# DP
+[https://leetcode.com/problems/maximum-subarray/] (contiguous subarray with maxmum sum) (kaden's algo)

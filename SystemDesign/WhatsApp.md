@@ -156,7 +156,7 @@ message
 
 - https://www.youtube.com/watch?v=c12cYAUTXXs : Erlang Factory 2014 - That's 'Billion' with a 'B': Scaling to the Next Level at WhatsApp
 
-
+- https://developers.facebook.com/videos/f8-2016/a-look-at-whatsapp-engineering-for-success-at-scale/
 
 
 **Common Features**
