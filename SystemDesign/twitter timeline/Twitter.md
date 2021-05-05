@@ -74,10 +74,10 @@
 - Complexity of O(n) where n being the number of people following you
 - Fanout to be done for non-celebrity.  
 		Data storage :  
-			Tweet : text, userId, time, location, image url, video url  
-			followers : userId, followingUserId (1,2 : 1,3)   
-			user : userName, userId, age...  
-			columnar : user timeline : timeLineIds  
+			- Tweet : text, userId, time, location, image url, video url  
+			- followers : userId, followingUserId (1,2 : 1,3)   
+			- user : userName, userId, age...  
+			- columnar : user timeline : timeLineIds  
 		
 			Rest url 
 		save
