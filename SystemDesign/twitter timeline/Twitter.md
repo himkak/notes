@@ -73,7 +73,7 @@
 - For non-active user home timeline is not cached, and if this user logs in his home timeline is made by querying the DB
 - Complexity of O(n) where n being the number of people following you
 - Fanout to be done for non-celebrity.  
-		Data storage :
+		Data storage :  
 			Tweet : text, userId, time, location, image url, video url
 			followers : userId, followingUserId (1,2 : 1,3) 
 			user : userName, userId, age...
