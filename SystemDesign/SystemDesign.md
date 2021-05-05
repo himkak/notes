@@ -1105,9 +1105,10 @@ https://github.com/himkak/notes/blob/master/SystemDesign/twitter%20timeline/Twit
 
 ## Notification
 
-## Chat app
+## Chat app whatsapp/slack/discord
 
 ## Distributed cache
 
+## Type Ahead
 
 </details>

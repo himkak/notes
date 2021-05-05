@@ -102,7 +102,7 @@ message
 - last seen : 
 - Group service : manages the group related information
 
-![Approach 1](https://github.com/himkak/notes/blob/master/SystemDesign/whatsApp_Approach2.jpg)
+![Approach 2](https://github.com/himkak/notes/blob/master/SystemDesign/whatsApp_Approach2.jpg)
 
 - In this aproach, we extnd the previous approach.
 - The connection service just manages the connections.
@@ -132,8 +132,9 @@ message
 
 ## References
 
+- https://www.youtube.com/playlist?list=PLq9MXGH7Fkt8Kgh4cKB06KTVXVYZmJiSg : my playlist in order 
 
-- https://github.com/DreamOfTheRedChamber/system-design/blob/master/messenger.md (*****)
+- https://github.com/DreamOfTheRedChamber/system-design-interviews/blob/master/Scenario_InstantMessenger.md    (*****)
 
 - protocol : XMPP  /  WobSocket
 - https://www.youtube.com/watch?v=6YhMOFS04kA : XMPP Tutorial : The Friendly Introduction
@@ -194,7 +195,11 @@ message
 - https://www.youtube.com/watch?v=L7LtmfFYjc4
 - https://medium.com/codingurukul/whatsapp-engineering-inside-1-1ef4845ff784 [bakwas]
 
+- http://blog.gainlo.co/index.php/2016/04/19/design-facebook-chat-function/?utm_source=quora&utm_medium=What%20is%20the%20best%20way%20to%20design%20a%20chat%20server%20and%20make%20it%20scalable%3F&utm_campaign=quora
 
+- https://systeminterview.com/design-a-chat-system.php
+
+- https://www.qed42.com/blog/developing-real-time-secure-chat-application-like-whatsapp-or-signal-with-end-end-encryption
 
 **Technology used:**
 - Erlang
@@ -211,4 +216,8 @@ message
 #### Slack
 
 - https://www.youtube.com/watch?v=WE9c9AZe-DY
+
+#### Discord
+
+- https://blog.discord.com/how-discord-handles-two-and-half-million-concurrent-voice-users-using-webrtc-ce01c3187429
 

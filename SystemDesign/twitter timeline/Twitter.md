@@ -20,18 +20,20 @@
 	- Horizotally scalable
 	
 ## Estimation
-	Text
+	Text Messages:
 		- Daily active users : 300E6
 		- write : 300E3
 		- total active users :
 		- read:write = 1000:1 = 600,000 : 600
 		- how much data to be stored
 			per tweet : 300 bytes
-			per day data = 900E8 * 400 * 5 = 180E12 Bytes / E3 = 180 GB 
-	Video
+			per day data = total tweets per day * per tweet size = 300E3 * 300 = 9E7
+			
+			Data for 5 yrs = 9E7 * 400(no of days per yr) * 5(no of yrs) = 180E9 Bytes / E9 = 180 GB
+	Video:
 		1 video size : 1E6 b
 		no of users upload (10% of write users)= 300E3/10 = 3E5
-		total data per day = 3E5 * 1E6 * 400 * 5 = 600  TB
+		total data per day = 3E5 * 1E6 * 400 * 5 = 60E13= 600E12= 600  TB
 	Video URL
 		per day : 200 B * 3E5 =  60E6 = 60 MB
 		5 yrs = 60 MB * 400 * 5 = 120 GB	
@@ -70,7 +72,7 @@
 - If the follower is not an active user(didnt logged in from last 30 days), no need to update its timeline object.
 - For non-active user home timeline is not cached, and if this user logs in his home timeline is made by querying the DB
 - Complexity of O(n) where n being the number of people following you
-- Fanout to be done for non-celebrity
+- Fanout to be done for non-celebrity.  
 		Data storage :
 			Tweet : text, userId, time, location, image url, video url
 			followers : userId, followingUserId (1,2 : 1,3) 
