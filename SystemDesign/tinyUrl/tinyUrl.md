@@ -79,7 +79,7 @@ Base 10 uses 0-9 chars. Base 62 has less chance of collision, in comparison to B
 - If we scale our app[holding the logic to encode and generate short URL], how to make sure short URLs dont conflict
 - If same url is provided by multiple users how to manage it efficiently.
 
-![TinyUrlSystemDesign](https://github.com/himkak/notes/blob/master/SystemDesign/TinyUrlSystemDesign.jpg)
+![TinyUrlSystemDesign](https://github.com/himkak/notes/blob/master/SystemDesign/tinyUrl/TinyUrlSystemDesign.jpg)
 
 
 ## References
