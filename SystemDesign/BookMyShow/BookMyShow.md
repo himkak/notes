@@ -11,6 +11,7 @@
 ## NFR
 - Consistency of data
 - multiple users should no be able to book same ticket
+- Durability
 
 ## Back of the envelop calculation
 **Database size**
@@ -102,16 +103,17 @@ Ticket Booking:
 
 ## High Level components
 
-- Movie view service : 
-- Ticket reservation service
-- Notification service
-- queue
-- DNS
-- CDN
-- Redis
-- cassandra
-- MySql 
-- S3
+- Movie view service : serves the read APIs : cinema halls, movies, available tickets
+- Ticket reservation service : used for write operations. Like lock a seat, book the ticket
+- API Gateway : Handles Orchestration (decides to which MS the request should be fwd to)
+- Notification service : For sending email/sms to user
+- queue : To publish ticket booked event. Multiple other tasks can be trigerred on ticket being booked.
+- CDN : Used to store the 
+- DNS : Depending on the url fwd the request to nearest CDN or to API Gateway
+- Redis : caches the responses which dont change through out the day. Helps to take lock and reserve a seat.
+- cassandra : For storing the non transactional data. As we want availability for this data, so cassandra is a good option
+- MySql : Read Replicas, stores the transactional data.
+- S3 : Stores the images, trailers of movies
 
 
 ![Architecture](https://github.com/himkak/notes/blob/master/SystemDesign/BookMyShow/BookMyShow.jpg)
