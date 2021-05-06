@@ -11,14 +11,24 @@
 	- prevent storing the page with same content but separate URL
 6) Crawls the new found links
 
+**Uses of Web Crawler**
+- Search Engine
+- Copy write violation detection
+- Web Malware detection
+- 
 
 ## NFR
 - 
 
 ## Estimation
-- Database
+Assumption
+- 900M registered websites in the internet
+- 60% are functional : 500M
+- Every page has link to 100 internal pages : TOtal : 500M * 100 = 50B pages
 
-- Bandwidth
+**Database**
+
+**Bandwidth**
 
 ## Solution 1
 
