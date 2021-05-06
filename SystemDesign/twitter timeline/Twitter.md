@@ -106,7 +106,7 @@
 		
 
 
-![HOme timeline Flow](https://github.com/himkak/notes/blob/master/SystemDesign/twitter%20timeline/ShowHomeTimeline.jpg)
+![Home timeline Flow](https://github.com/himkak/notes/blob/master/SystemDesign/twitter%20timeline/ShowHomeTimeline.jpg)
 
 		
 ### Search

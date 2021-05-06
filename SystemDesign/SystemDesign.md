@@ -934,7 +934,7 @@ https://github.com/himkak/notes/blob/master/SystemDesign/twitter%20timeline/Twit
 - http://blog.gainlo.co/index.php/2016/08/08/design-garbage-collection-system-part-ii/
 
 ### Dropbox
-
+- https://www.youtube.com/watch?v=PE4gwstWhmc
 - http://blog.gainlo.co/index.php/2016/09/12/dropbox-interview-design-hit-counter/
 
 ### Rate limiting
