@@ -114,4 +114,4 @@ Ticket Booking:
 - S3
 
 
-![Architecture](https://github.com/himkak/notes/blob/master/SystemDesign/BookMyShow/BookMyShow.JPG)
+![Architecture](https://github.com/himkak/notes/blob/master/SystemDesign/BookMyShow/BookMyShow.jpg)
