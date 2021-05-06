@@ -24,9 +24,12 @@
 Assumption
 - 900M registered websites in the internet
 - 60% are functional : 500M
-- Every page has link to 100 internal pages : TOtal : 500M * 100 = 50B pages
+- Every page has link to 100 internal pages : Total : 500M * 100 = 50B pages
+- Per page size : 120 kb
+
 
 **Database**
+50B*120kb = 6E10 kb= 60TB
 
 **Bandwidth**
 
