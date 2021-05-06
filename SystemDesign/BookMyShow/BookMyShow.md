@@ -26,6 +26,10 @@
 	- Total data to capture movies information
 
 **Bandwidth**
+- Biggest response : show information : 10 kb
+- Max active sessions at any moment : 10,000
+- R:W ratio : 9:1
+- 9000 * 100 = 9E4 kb = 10 MB/sec
 
 
 ## API
