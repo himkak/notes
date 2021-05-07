@@ -843,7 +843,7 @@ Level 3 - Hypermedia Controls
 
 - https://www.youtube.com/watch?v=NOHQ15lwHKY : Uber System Design | Design Ride-Hailing Application | System Design Interview
 
-
+- https://www.youtube.com/watch?v=AAMLzNaDkjk
 
 ### Social Media
 
@@ -961,6 +961,8 @@ https://github.com/himkak/notes/blob/master/SystemDesign/twitter%20timeline/Twit
 
 
 ## References:
+
+- https://github.com/donnemartin/system-design-primer#additional-system-design-interview-questions
 
 
 - https://drive.google.com/drive/folders/1OOM9DvWK3uWrlC-itxycbYroDS439Fhv : system design from algo-expert...

@@ -33,10 +33,10 @@
 ### BandWidth estimation
 
 - **For write**
-- url per sec * size of each url = 200 * 500 bytes = 100KB/sec
+		- url per sec * size of each url = 200 * 500 bytes = 100KB/sec
 
 - **For read**
-- url per sec * size of each url = 2*10^4 * 500 = 10 MB/sec
+		- url per sec * size of each url = 2*10^4 * 500 = 10 MB/sec
 
 ### Memory estimation for caching of frequently accessed URLs
 
