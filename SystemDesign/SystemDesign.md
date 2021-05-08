@@ -703,13 +703,16 @@ Level 3 - Hypermedia Controls
 
 </details>
 
+<details>
+<summary> Capacity planning
+</summary>
 
 ## Capacity planning
 - https://blog.newrelic.com/engineering/capacity-planning/
 - https://wso2.com/whitepapers/capacity-planning-for-application-design-part-1/
 
 
-
+</details>
 
 <details>
 <summary> Generic Approach to solve system design questions
@@ -806,6 +809,11 @@ Level 3 - Hypermedia Controls
 </summary>
 
 
+| Problem Statement | Difficulty level | most interesting use cases                                                                                    | Most complex problem                                         | NFR                                                   | Tyep of System | APIs | Estimation                  | DB Model                           | Which DB to be used                                                                                                                                                                         | High Level components                                                                           | System Diagram                                                                                                         | Sequence Diagram | References                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| ----------------- | ---------------- | ------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------ | ----------------------------------------------------- | -------------- | ---- | --------------------------- | ---------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- | ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| TinyUrl           | Easy             | .- Generate short URL<br>\- Give option to provide self short URL<br>\- URL to be valid for specific duration | Distributed solution to keep on generating unique short URLs | .- High Availability<br>\- Real time, minimum latency | Read Heavy     |      | Read to write ratio : 100:1 | URL Mapping : short url , main url | .-For caching most used short URLs: Redis,<br>\- For storing the mapping between short rul and main url. This data can be eventually consistent, but should be highly available : Cassandra | .-URL Encoding service<br>\- Zookeeper<br>\- Load Balancer<br>\- Redis cache<br>\- Cassandra DB | !\[TinyUrlSystemDesign\](https://github.com/himkak/notes/blob/master/SystemDesign/tinyUrl/TinyUrlSystemDesign.jpg)<br> |                  | .- https://github.com/himkak/notes/blob/master/SystemDesign/tinyUrl/tinyUrl.md<br>.-https://www.youtube.com/watch?v=JQDHz72OA3c<br><br>\-https://www.educative.io/courses/grokking-the-system-design-interview/m2ygV4E81AR : Designing a URL Shortening service like TinyURL<br><br>\-https://github.com/himkak/library/blob/master/system%20design/GrokkingTheSystemDesign\_Educative\_Designing%20a%20URL%20Shortening%20service%20like%20TinyURL.pdf |
+
+
 ### design a short URL system 
 
 - https://github.com/himkak/notes/blob/master/SystemDesign/tinyUrl.md
@@ -813,8 +821,6 @@ Level 3 - Hypermedia Controls
 ### Designing Typeahead Suggestion
 
 
-
-### design chrome autocompletion
 
 ### Chat Applications 
 
@@ -1075,42 +1081,5 @@ https://github.com/himkak/notes/blob/master/SystemDesign/twitter%20timeline/Twit
 
 - https://event.on24.com/eventRegistration/console/EventConsoleApollo.jsp?simulive=y&eventid=2515418&sessionid=1&username=&partnerref=&format=fhaudio&mobile=&flashsupportedmobiledevice=&helpcenter=&key=F9BFB60CA2B02E9F9A8B4037A2FA0445&newConsole=true&nxChe=true&newTabCon=true&text_language_id=en&playerwidth=748&playerheight=526&eventuserid=416809612&contenttype=A&mediametricsessionid=359075945&mediametricid=3542780&usercd=416809612&mode=launch
 
-# Generic Requirements
-
-## Comparison of databases, which to use when
-
-## Event Streaming
-
-## CQRS
-
-## Upload file/photos/videos
-
-### Dropbox
-
-### Google Drive
-
-## Manage Post with comments & likes as Insta/ FB/ twitter has
-
-## Login functionality authentication & authrization
-
-## ecommerce 
-
-## ticket booking like book my show
-
-## Distributed Counter
-
-## Rate limiter
-
-## Web Crawler
-
-## Video Streaming Netflix/youtube/tiktok
-
-## Notification
-
-## Chat app whatsapp/slack/discord
-
-## Distributed cache
-
-## Type Ahead
 
 </details>
