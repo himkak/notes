@@ -8,7 +8,7 @@
 - https://www.youtube.com/watch?v=HnSb8DFU5UA
 
 
-#### Algorithms
+
 
 ![image](https://user-images.githubusercontent.com/17414949/173226564-64a78f69-9ce1-47b9-86b0-1585cb5b75d5.png)
 
@@ -16,6 +16,7 @@
 
 ![image](https://user-images.githubusercontent.com/17414949/173226651-082bc27d-da78-4115-8239-729efb508a8b.png)
 
+#### Algorithms
 
 - **Token bucket** : 
 	- Approach : use redis, have a key value for every user. key = user Id, value = {lastUpdated, availableTokens}. 
