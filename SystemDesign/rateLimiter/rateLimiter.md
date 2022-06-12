@@ -5,6 +5,7 @@
 - https://www.youtube.com/watch?v=mhUQe4BKZXs : Rate Limiting system design | TOKEN BUCKET, Leaky Bucket, Sliding Logs
 
 - https://konghq.com/blog/how-to-design-a-scalable-rate-limiting-algorithm/ : How to Design a Scalable Rate Limiting Algorithm
+- https://www.youtube.com/watch?v=HnSb8DFU5UA
 
 
 #### Algorithms
