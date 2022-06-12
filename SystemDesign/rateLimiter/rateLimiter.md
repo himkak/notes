@@ -10,6 +10,13 @@
 
 #### Algorithms
 
+![image](https://user-images.githubusercontent.com/17414949/173226564-64a78f69-9ce1-47b9-86b0-1585cb5b75d5.png)
+
+![image](https://user-images.githubusercontent.com/17414949/173226603-ff91969f-f48a-4cb4-8b21-c9c82383781d.png)
+
+![image](https://user-images.githubusercontent.com/17414949/173226651-082bc27d-da78-4115-8239-729efb508a8b.png)
+
+
 - **Token bucket** : 
 	- Approach : use redis, have a key value for every user. key = user Id, value = {lastUpdated, availableTokens}. 
 	- For every request, reduce the token and update the lastUpdated.
@@ -24,6 +31,10 @@
 	- Req 6 : time :15:30:30, reject the request and dont update the db. As the request came in same minute.
 	- Req 7 : time :15:31:01, value in db : userId1 : {lastUpdated: 15:31:01, availableTokens : 4 } Refill the tokens.
 	- problem : concurrency issue
+
+![image](https://user-images.githubusercontent.com/17414949/173226480-265db179-7cb6-4d7a-ab95-b6b9de4c410e.png)
+
+
 - **Leaky bucket** :
 	- TO be used when we want to serve specific number of requests at any given point of time.
 	- Approach : Have a queue, with fixed size. Whcih ever request came first will be served first. If the queue is full, the new requests coming will be discarded.
@@ -41,6 +52,11 @@
 - **sliding window counter** :
 	- Extension of sliding logs.
 	- Approach : Here we keep a count of no of request in that sec. So advantage is that, suppose 2 requests come at same sec. So we will have 1 entry with counter 2. But the sliding log we would had 2 elemenets in the collection. We can use the hashTable datastructure of redis.
+
+![image](https://user-images.githubusercontent.com/17414949/173226368-99be9e4e-7e2d-4675-a2d1-3f5866a44740.png)
+
+![image](https://user-images.githubusercontent.com/17414949/173226418-21cb5ff0-617e-4269-926a-27a707d661f0.png)
+
 	
 #### Distributed
 
@@ -52,3 +68,6 @@
 - Approach 2 : locks on DB
 	- Issue with this approach is latency
 	
+#### Anti patterns
+![image](https://user-images.githubusercontent.com/17414949/173226517-93ed2191-d603-4438-a878-1ab2b467d87e.png)
+
