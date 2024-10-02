@@ -989,6 +989,13 @@ https://github.com/himkak/notes/blob/master/SystemDesign/twitter%20timeline/Twit
 - https://github.com/binhnguyennus/awesome-scalability
 
 - https://techtakshila.com/system-design/chapter-1
+  
+- https://www.akamai.com/glossary
+- https://dancres.github.io/Pages/
+- https://newsletter.systemdesign.one/p/netflix-microservices
+- https://www.youtube.com/watch?v=ifSckJlatWE : AWS DynamoDB (Internals) Masterclass with Alex Debrie
+- https://martinfowler.com/architecture/ : architecture patterns
+
 
 
 
@@ -1089,4 +1096,16 @@ https://github.com/himkak/notes/blob/master/SystemDesign/twitter%20timeline/Twit
 <summary> Interesting White papers
 </summary>
 ## Interesting White papers
+- https://medium.com/javarevisited/40-must-read-white-papers-to-learn-system-design-and-software-architecture-775c4197f9c8
+- Amazon's Dynamo DB : https://www.allthingsdistributed.com/2007/10/amazons_dynamo.html
+- https://storage.googleapis.com/gweb-research2023-media/pubtools/4446.pdf : Google File System
 </details>
+
+<details>
+<summary> Architecture Patterns
+</summary>
+## Write ahead logs / Transaction logs
+- https://engineering.linkedin.com/distributed-systems/log-what-every-software-engineer-should-know-about-real-time-datas-unifying
+</details>
+
+
