@@ -957,8 +957,30 @@ https://github.com/himkak/notes/blob/master/SystemDesign/twitter%20timeline/Twit
 
 </details>
 
+<details>
+<summary> Cloud
+</summary>
+	
+## GCP
+
+- https://learning.oreilly.com/videos/gcp-complete-google/9781788999519
+  
+- https://app.pluralsight.com/library/courses/google-cloud-platform-fundamentals/table-of-contents
+
+## Azure
+
+- https://www.youtube.com/playlist?list=PLGjZwEtPN7j-Q59JYso3L4_yoCjj2syrM
+
+- https://info.microsoft.com/ww-thankyou-azure-infra-introduction-to-iaas-on-demand-webinar.html?LCID=en-in&ocid=mkto_eml_em593935a1la1&ocid=eml_pg163405_gdc_comm_az
+
+- https://docs.microsoft.com/en-gb/learn/modules/intro-to-azure-fundamentals/
 
 
+
+
+## AWS
+
+</details>
 
 <details>
 <summary> References
@@ -1035,19 +1057,6 @@ https://github.com/himkak/notes/blob/master/SystemDesign/twitter%20timeline/Twit
 
 - https://www.notion.so/73e875fdfffd48f588d9e643afb16275?v=0c0dd4236ad3474daa9e905b025618a0 : Yogesh Notes
 
-#### GCP
-
-- https://learning.oreilly.com/videos/gcp-complete-google/9781788999519
-- https://app.pluralsight.com/library/courses/google-cloud-platform-fundamentals/table-of-contents
-
-#### Azure
-
-- https://info.microsoft.com/ww-thankyou-azure-infra-introduction-to-iaas-on-demand-webinar.html?LCID=en-in&ocid=mkto_eml_em593935a1la1&ocid=eml_pg163405_gdc_comm_az
-
-- https://docs.microsoft.com/en-gb/learn/modules/intro-to-azure-fundamentals/
-
-- 
-#### AWS
 
 
 
