@@ -971,6 +971,8 @@ https://github.com/himkak/notes/blob/master/SystemDesign/twitter%20timeline/Twit
 
 - https://www.youtube.com/playlist?list=PLGjZwEtPN7j-Q59JYso3L4_yoCjj2syrM
 
+- https://www.youtube.com/playlist?list=PLlVtbbG169nED0_vMEniWBQjSoxTsBYS3
+
 - https://info.microsoft.com/ww-thankyou-azure-infra-introduction-to-iaas-on-demand-webinar.html?LCID=en-in&ocid=mkto_eml_em593935a1la1&ocid=eml_pg163405_gdc_comm_az
 
 - https://docs.microsoft.com/en-gb/learn/modules/intro-to-azure-fundamentals/
