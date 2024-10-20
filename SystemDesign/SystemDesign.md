@@ -984,6 +984,10 @@ https://github.com/himkak/notes/blob/master/SystemDesign/twitter%20timeline/Twit
 
 ## AWS
 
+## Architecting Cloud Applications
+
+- https://www.youtube.com/playlist?list=PL9XzOCngAkqs0Q8ZRdafnSYExKQurZrBY
+
 </details>
 
 <details>
