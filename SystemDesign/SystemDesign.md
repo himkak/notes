@@ -979,7 +979,11 @@ https://github.com/himkak/notes/blob/master/SystemDesign/twitter%20timeline/Twit
 
 - https://docs.microsoft.com/en-gb/learn/modules/intro-to-azure-fundamentals/
 
+### AZ-305 : Azure Infrastructure Solutions
 
+- https://learn.microsoft.com/en-us/credentials/certifications/exams/az-305/
+
+- https://www.youtube.com/playlist?list=PLlVtbbG169nHSnaP4ae33yQUI3zcmP5nP
 
 
 ## AWS
