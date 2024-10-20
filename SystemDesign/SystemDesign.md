@@ -969,6 +969,8 @@ https://github.com/himkak/notes/blob/master/SystemDesign/twitter%20timeline/Twit
 
 ## Azure
 
+### AZ-900 : Azure Fundamentals
+
 - https://www.youtube.com/playlist?list=PLGjZwEtPN7j-Q59JYso3L4_yoCjj2syrM
 
 - https://www.youtube.com/playlist?list=PLlVtbbG169nED0_vMEniWBQjSoxTsBYS3
